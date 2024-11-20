@@ -8,22 +8,23 @@ terraform {
   #  }
   #}
   cloud {
-    hostname = "app.terraform.io"
-    organization = "ExamPro"
+    hostname     = "app.terraform.io"
+    organization = "LB-GlobexInfraOps"
 
     workspaces {
-      name = "getting-started"
+      name    = "getting-started"
+      project = "terraform-associate-labs"
     }
   }
 
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.0"
+      version = ">= 5.70.0"
     }
   }
 }
 
 locals {
-  project_name = "Andrew"
+  project_name = "terraform-associate-labs-getting-started"
 }
