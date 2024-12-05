@@ -2,17 +2,18 @@ terraform {
   required_providers {
     aws = {
       source = "hashicorp/aws"
-      version = "3.59.0"
+      version = ">= 5.70.0"
     }
   }
 }
 
 provider "aws" {
   region = "us-east-1"
+  profile = "lb-aws-admin"
 }
 
 data "aws_vpc" "main" {
-  id = "vpc-bd9bdcc7"
+  id = "vpc-0cd1d459812cff83a"
 }
 
 
@@ -63,7 +64,7 @@ resource "aws_security_group" "sg_my_server" {
 
 resource "aws_key_pair" "deployer" {
   key_name   = "deployer-key"
-  public_key = "YOUR_SSH_KEY"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYHI5yZIX8bu92xX1mMLxSU/V4dNUPW+UIYRuYQzVBB307eIcmp/9s01yMcFogsPTt4hrTZECAEsCgfAT0H/h5CZVFohxfkdeLkWhgLNuBD/qPqeg0rV8GgxhHtYbfgAR7uqquQCQNAjgS3IOnjxbN2KCq5Zw+X2UTQsPrZBt2X38NdQknni6pN1E6eksaqeS5lOqoUM5ZCKMiBeWl+QoDHiS74quWVY6v5z55qMnqHj5MrSW1Sr5lv5fRj7TaTasq90H9GVNHGhoq0uBqhkjLXd/2quska0+6ybqymRR0eGLP2cWb1WcQ7OhqgUTPuo0fNNcvK/iuUU1rOX3mK+Da10+Rmmcm/HFi/Gc1EYzc6aaKyS+KMPRYmVkn3ltq876qKbXmL1KQwPQD3u6zCvPMrQrp5ztTKa6Td4C5qwPawVBdh7SoXD1hvr0NLHZc+KfapDJt0NSXRU/m06CHm9LVOWqvRUNNLHj5ORpxBySovUd7Ubv6kvc/FUfDsp49yOXkL9xUrW48xpjsFWCLYUBqVI8UE/fp9YVKmy5riWpKgB9mP2GPKfAsPxTf12ffzUigUeW+RtlGOawNw184D8f9AsKDqlJozx3IJboADf0C1PcnIsrGbSh+Bl3fj5ZwveuS4x/E8Gf4oexlROMpT4R3ZdwZVD/ekOrCRs7UYEhvPw== luca.bigoni@gmail.com"
 }
 
 data "template_file" "user_data" {
@@ -85,7 +86,7 @@ resource "aws_instance" "my_server" {
 			type     = "ssh"
 			user     = "ec2-user"
 			host     = "${self.public_ip}"
-			private_key = "${file("/root/.ssh/terraform")}"
+			private_key = "${file("id_rsa")}"
 		}
   }
 

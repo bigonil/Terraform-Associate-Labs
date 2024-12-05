@@ -2,17 +2,18 @@ terraform {
   required_providers {
     aws = {
       source = "hashicorp/aws"
-      version = "3.59.0"
+      version = ">= 3.70.0"
     }
   }
 }
 
 provider "aws" {
   region = "us-east-1"
+  profile = "lb-aws-admin"
 }
 
 data "aws_vpc" "main" {
-  id = "vpc-bd9bdcc7"
+  id = "vpc-0cd1d459812cff83a"
 }
 
 
@@ -38,7 +39,7 @@ resource "aws_security_group" "sg_my_server" {
       from_port        = 22
       to_port          = 22
       protocol         = "tcp"
-      cidr_blocks      = ["104.194.51.113/32"]
+      cidr_blocks      = ["0.0.0.0/0"]
       ipv6_cidr_blocks = []
 			prefix_list_ids  = []
 			security_groups = []
@@ -62,8 +63,8 @@ resource "aws_security_group" "sg_my_server" {
 }
 
 resource "aws_key_pair" "deployer" {
-  key_name   = "deployer-key"
-  public_key = "YOUR_SSH_KEY"
+  key_name   = "lb-tf-deployer-key"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCgGTbYPH84tomXiQOnVaOSNlDLtzBPBLJl3FpEanqLsLqJ8rep1eao4ZN8UTS/BC3JzdxpE/A5z0JSQVqVyaHfwkHx2w69eKSYmbcMdh87eLm0WBbFhkjHLaxQfjviS+q+oCXbQTdHVgae6xcyHDatzpLtsnL6jw4hAEKdk5nva9od3HAhirh9YJYmXF4RIX8T1V+bOIs2L4VO8VTMuxOgGW5oy3RZ5R1phnHlQySce7JSncruKXcNhJfsL8VA66+3uteoES8MoaGZimqS20eBoLp2Pz1mco18QXqfANPuroMWBajMkUPR4zXuqHitM+bT1M3HxaX/xe2yxKerUtZL"
 }
 
 data "template_file" "user_data" {
