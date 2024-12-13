@@ -1,14 +1,14 @@
 terraform {
   required_providers {
     aws = {
-      source = "hashicorp/aws"
+      source  = "hashicorp/aws"
       version = ">= 5.70.0"
     }
   }
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region  = "us-east-1"
   profile = "lb-aws-admin"
 }
 
@@ -30,34 +30,34 @@ resource "aws_security_group" "sg_my_server" {
       protocol         = "tcp"
       cidr_blocks      = ["0.0.0.0/0"]
       ipv6_cidr_blocks = []
-			prefix_list_ids  = []
-			security_groups = []
-			self = false
+      prefix_list_ids  = []
+      security_groups  = []
+      self             = false
     },
     {
       description      = "SSH"
       from_port        = 22
       to_port          = 22
       protocol         = "tcp"
-      cidr_blocks      = ["172.31.0.0/16"]
+      cidr_blocks      = ["0.0.0.0/0"]
       ipv6_cidr_blocks = []
-			prefix_list_ids  = []
-			security_groups = []
-			self = false
+      prefix_list_ids  = []
+      security_groups  = []
+      self             = false
     }
   ]
 
   egress = [
     {
-			description = "outgoing traffic"
+      description      = "outgoing traffic"
       from_port        = 0
       to_port          = 0
       protocol         = "-1"
       cidr_blocks      = ["0.0.0.0/0"]
       ipv6_cidr_blocks = ["::/0"]
-			prefix_list_ids  = []
-			security_groups = []
-			self = false
+      prefix_list_ids  = []
+      security_groups  = []
+      self             = false
     }
   ]
 }
@@ -68,26 +68,29 @@ resource "aws_key_pair" "deployer" {
 }
 
 data "template_file" "user_data" {
-	template = file("./userdata.yaml")
+  template = file("./userdata.yaml")
 }
 
 
 resource "aws_instance" "my_server" {
-  ami           = "ami-087c17d1fe0178315"
-  instance_type = "t2.micro"
-	key_name = "${aws_key_pair.deployer.key_name}"
-	vpc_security_group_ids = [aws_security_group.sg_my_server.id]
-	user_data = data.template_file.user_data.rendered
+  ami                    = "ami-087c17d1fe0178315"
+  instance_type          = "t2.micro"
+  key_name               = aws_key_pair.deployer.key_name
+  vpc_security_group_ids = [aws_security_group.sg_my_server.id]
+  user_data              = data.template_file.user_data.rendered
   provisioner "remote-exec" {
-		inline = [
-			"echo \"mars\" >> /home/ec2-user/barsoon/txt"
-		]
-		connection {
-			type     = "ssh"
-			user     = "ec2-user"
-			host     = "${self.public_ip}"
-			private_key = "${file("id_rsa")}"
-		}
+    inline = [
+      "mkdir /home/ec2-user/barsoon",
+      "cd /home/ec2-user/barsoon",
+      "touch mars.txt",
+      "echo \"mars\" >> /home/ec2-user/barsoon/mars.txt"
+    ]
+    connection {
+      type        = "ssh"
+      user        = "ec2-user"
+      host        = self.public_ip
+      private_key = file("id_rsa")
+    }
   }
 
   tags = {
@@ -95,6 +98,6 @@ resource "aws_instance" "my_server" {
   }
 }
 
-output "public_ip"{
-	value = aws_instance.my_server.public_ip
+output "public_ip" {
+  value = aws_instance.my_server.public_ip
 }
