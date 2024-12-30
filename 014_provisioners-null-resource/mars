@@ -1,0 +1,17 @@
+provider "aws" {
+    region = "us-east-1"
+}
+
+resource "null_resource" "example" {
+    provisioner "local-exec" {
+        command = "echo Hello, World!"
+    }
+
+    triggers = {
+        always_run = "${timestamp()}"
+    }
+}
+
+output "example_output" {
+    value = null_resource.example.id
+}
