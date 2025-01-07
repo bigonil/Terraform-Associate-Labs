@@ -48,7 +48,7 @@ resource "aws_security_group" "sg_my_server" {
       from_port        = 22
       to_port          = 22
       protocol         = "tcp"
-      cidr_blocks      = ["104.194.51.113/32"]
+      cidr_blocks      = ["151.42.204.244/32"]
       ipv6_cidr_blocks = []
       prefix_list_ids  = []
       security_groups  = []
