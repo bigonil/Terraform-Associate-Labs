@@ -77,7 +77,7 @@ resource "aws_key_pair" "deployer" {
 }
 
 data "template_file" "user_data" {
-  template = file("./userdata.yaml")
+  template = file("./userdata.yaml")cd 
 }
 
 
