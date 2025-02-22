@@ -1,11 +1,32 @@
 terraform {
-}
+  #  cloud {
+  #    hostname     = "app.terraform.io"
+  #    organization = "LB-GlobexInfraOps"
 
-module "aws_server" {
-	source = ".//aws_server"
-	instance_type = "t2.micro"
-}
+  #    workspaces {
+  #      name    = "getting-started"
+  #      project = "terraform-associate-labs"
+  #    }
+  # }
 
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 5.70.0"
+    }
+  }
+}
+variable "instance_type" {
+  type = string
+}
+provider "aws" {
+  profile = "lb-aws-admin"
+  region  = "us-east-1"
+}
+resource "aws_instance" "my_server" {
+  ami           = "ami-087c17d1fe0178315"
+  instance_type = var.instance_type
+}
 output "public_ip" {
-  value = module.aws_server.public_ip
+  value = aws_instance.my_server.public_ip
 }
