@@ -1,1 +1,1 @@
-instance_type = "t2.micro"
+instance_type = "nano"  # Change this value to "nano" to use a smaller instance type

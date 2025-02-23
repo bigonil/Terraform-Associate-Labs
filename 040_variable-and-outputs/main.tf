@@ -18,6 +18,7 @@ terraform {
 }
 variable "instance_type" {
   type = string
+  description = "Size of instance"
 }
 provider "aws" {
   profile = "lb-aws-admin"
@@ -26,7 +27,4 @@ provider "aws" {
 resource "aws_instance" "my_server" {
   ami           = "ami-087c17d1fe0178315"
   instance_type = var.instance_type
-}
-output "public_ip" {
-  value = aws_instance.my_server.public_ip
 }
