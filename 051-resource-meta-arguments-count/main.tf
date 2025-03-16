@@ -2,13 +2,13 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "3.58.0"
+      version = ">= 5.80.0"
     }
   }
 }
 
 provider "aws" {
-  profile = "default"
+  profile = "lb-aws-admin"
   region  = "us-east-1"
 }
 resource "aws_instance" "my_server" {
@@ -18,8 +18,4 @@ resource "aws_instance" "my_server" {
 	tags = {
 		Name = "Server-${count.index}"
 	}
-}
-
-output "public_ip" {
-  value = aws_instance.my_server[*].public_ip
 }
