@@ -12,10 +12,10 @@ provider "aws" {
   region  = "us-east-1"
 }
 resource "aws_instance" "my_server" {
-	count = 2
+  count         = 2
   ami           = "ami-087c17d1fe0178315"
   instance_type = "t2.micro"
-	tags = {
-		Name = "Server-${count.index}"
-	}
+  tags = {
+    Name = "Server-${count.index}"
+  }
 }
