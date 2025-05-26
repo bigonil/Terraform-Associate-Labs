@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "bigonil-sonarcloud",
+        "projectKey": "bigonil_Terraform-Associate-Labs"
+    }
+}

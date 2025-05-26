@@ -2,18 +2,18 @@ terraform {
   required_providers {
     aws = {
       source = "hashicorp/aws"
-      version = "3.59.0"
+      version = ">= 5.90.0"
     }
   }
 }
 
 provider "aws" {
-	profile = "default"
+	profile = "lb-aws-admin"
 	region = "us-east-1"
 }
 
 data "aws_vpc" "main" {
-	id = "vpc-bd9bdcc7"
+	id = "vpc-0cd1d459812cff83a"
 }
 
 locals {
@@ -51,7 +51,7 @@ resource "aws_security_group" "allow_tls" {
 
   egress = [
     {
-			description = "outgoing for everyone"
+	  description = "outgoing for everyone"
       from_port        = 0
       to_port          = 0
       protocol         = "-1"

@@ -8,15 +8,16 @@ terraform {
 }
 
 provider "aws" {
-  profile = "default"
-  region  = "us-east-1"
+  profile = "lb-aws-admin" # Use your AWS profile name
+  # region = "us-west-2"  # Uncomment this line if you want to specify a different region
+  region = "us-east-1"
 }
 resource "aws_instance" "our_server" {
   ami           = "ami-087c17d1fe0178315"
   instance_type = "t2.micro"
-	tags = {
-		Name = "MyServer"
-	}
+  tags = {
+    Name = "MyServer"
+  }
 }
 
 output "public_ip" {
