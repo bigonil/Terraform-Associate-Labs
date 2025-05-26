@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "aws" {
-  profile = "default"
+  profile = "lb-aws-admin"
   region  = "us-east-1"
 }
 resource "aws_instance" "my_server" {
@@ -20,7 +20,7 @@ resource "aws_instance" "my_server" {
 }
 
 resource "aws_s3_bucket" "bucket" {
-  bucket = "my-new-bucket-421419084210"
+  bucket = "greatly-sincerely-mainly-relaxed-oryx"
 }
 
 output "public_ip" {
