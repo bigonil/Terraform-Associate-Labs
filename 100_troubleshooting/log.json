@@ -1,0 +1,709 @@
+{"@level":"info","@message":"Terraform version: 1.11.4","@timestamp":"2025-05-27T14:00:07.483151+02:00"}
+{"@level":"debug","@message":"using github.com/hashicorp/go-tfe v1.70.0","@timestamp":"2025-05-27T14:00:07.523700+02:00"}
+{"@level":"debug","@message":"using github.com/hashicorp/hcl/v2 v2.23.0","@timestamp":"2025-05-27T14:00:07.523700+02:00"}
+{"@level":"debug","@message":"using github.com/hashicorp/terraform-svchost v0.1.1","@timestamp":"2025-05-27T14:00:07.523700+02:00"}
+{"@level":"debug","@message":"using github.com/zclconf/go-cty v1.16.0","@timestamp":"2025-05-27T14:00:07.523700+02:00"}
+{"@level":"info","@message":"Go runtime version: go1.23.3","@timestamp":"2025-05-27T14:00:07.523700+02:00"}
+{"@level":"info","@message":"CLI args: []string{\"C:\\\\Terraform\\\\terraform.exe\", \"plan\"}","@timestamp":"2025-05-27T14:00:07.524214+02:00"}
+{"@level":"trace","@message":"Stdout is a terminal of width 100","@timestamp":"2025-05-27T14:00:07.524214+02:00"}
+{"@level":"trace","@message":"Stderr is a terminal of width 100","@timestamp":"2025-05-27T14:00:07.524214+02:00"}
+{"@level":"trace","@message":"Stdin is a terminal","@timestamp":"2025-05-27T14:00:07.524214+02:00"}
+{"@level":"debug","@message":"Attempting to open CLI config file: C:\\Users\\luca.bigoni\\AppData\\Roaming\\terraform.rc","@timestamp":"2025-05-27T14:00:07.528254+02:00"}
+{"@level":"debug","@message":"File doesn't exist, but doesn't need to. Ignoring.","@timestamp":"2025-05-27T14:00:07.528888+02:00"}
+{"@level":"debug","@message":"ignoring non-existing provider search directory terraform.d/plugins","@timestamp":"2025-05-27T14:00:07.529419+02:00"}
+{"@level":"debug","@message":"ignoring non-existing provider search directory C:\\Users\\luca.bigoni\\AppData\\Roaming\\terraform.d\\plugins","@timestamp":"2025-05-27T14:00:07.529419+02:00"}
+{"@level":"debug","@message":"ignoring non-existing provider search directory C:\\Users\\luca.bigoni\\AppData\\Roaming\\HashiCorp\\Terraform\\plugins","@timestamp":"2025-05-27T14:00:07.530444+02:00"}
+{"@level":"info","@message":"CLI command args: []string{\"plan\"}","@timestamp":"2025-05-27T14:00:07.530444+02:00"}
+{"@level":"trace","@message":"Meta.Backend: no config given or present on disk, so returning nil config","@timestamp":"2025-05-27T14:00:07.531487+02:00"}
+{"@level":"trace","@message":"Meta.Backend: backend has not previously been initialized in this working directory","@timestamp":"2025-05-27T14:00:07.531487+02:00"}
+{"@level":"trace","@message":"Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)","@timestamp":"2025-05-27T14:00:07.531487+02:00"}
+{"@level":"trace","@message":"Meta.Backend: instantiated backend of type \u003cnil\u003e","@timestamp":"2025-05-27T14:00:07.531487+02:00"}
+{"@level":"trace","@message":"providercache.fillMetaCache: scanning directory .terraform\\providers","@timestamp":"2025-05-27T14:00:07.532513+02:00"}
+{"@level":"trace","@message":"getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/aws v3.58.0 for windows_386 at .terraform\\providers\\registry.terraform.io\\hashicorp\\aws\\3.58.0\\windows_386","@timestamp":"2025-05-27T14:00:07.533587+02:00"}
+{"@level":"trace","@message":"providercache.fillMetaCache: including .terraform\\providers\\registry.terraform.io\\hashicorp\\aws\\3.58.0\\windows_386 as a candidate package for registry.terraform.io/hashicorp/aws 3.58.0","@timestamp":"2025-05-27T14:00:07.534112+02:00"}
+{"@level":"debug","@message":"checking for provisioner in \".\"","@timestamp":"2025-05-27T14:00:08.004514+02:00"}
+{"@level":"debug","@message":"checking for provisioner in \"C:\\\\Terraform\"","@timestamp":"2025-05-27T14:00:08.004514+02:00"}
+{"@level":"trace","@message":"Meta.Backend: backend \u003cnil\u003e does not support operations, so wrapping it in a local backend","@timestamp":"2025-05-27T14:00:08.004514+02:00"}
+{"@level":"info","@message":"backend/local: starting Plan operation","@timestamp":"2025-05-27T14:00:08.014519+02:00"}
+{"@level":"trace","@message":"backend/local: requesting state manager for workspace \"default\"","@timestamp":"2025-05-27T14:00:08.014519+02:00"}
+{"@level":"trace","@message":"backend/local: state manager for workspace \"default\" will:\n - read initial snapshot from terraform.tfstate\n - write new snapshots to terraform.tfstate\n - create any backup at terraform.tfstate.backup","@timestamp":"2025-05-27T14:00:08.014519+02:00"}
+{"@level":"trace","@message":"backend/local: requesting state lock for workspace \"default\"","@timestamp":"2025-05-27T14:00:08.014519+02:00"}
+{"@level":"trace","@message":"statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate","@timestamp":"2025-05-27T14:00:15.271305+02:00"}
+{"@level":"trace","@message":"statemgr.Filesystem: no previously-stored snapshot exists","@timestamp":"2025-05-27T14:00:15.273001+02:00"}
+{"@level":"trace","@message":"statemgr.Filesystem: locking terraform.tfstate using LockFileEx","@timestamp":"2025-05-27T14:00:15.273001+02:00"}
+{"@level":"trace","@message":"statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info","@timestamp":"2025-05-27T14:00:15.273001+02:00"}
+{"@level":"trace","@message":"backend/local: reading remote state for workspace \"default\"","@timestamp":"2025-05-27T14:00:15.274627+02:00"}
+{"@level":"trace","@message":"statemgr.Filesystem: reading latest snapshot from terraform.tfstate","@timestamp":"2025-05-27T14:00:15.274627+02:00"}
+{"@level":"trace","@message":"statemgr.Filesystem: snapshot file has nil snapshot, but that's okay","@timestamp":"2025-05-27T14:00:15.275149+02:00"}
+{"@level":"trace","@message":"statemgr.Filesystem: read nil snapshot","@timestamp":"2025-05-27T14:00:15.275149+02:00"}
+{"@level":"trace","@message":"backend/local: populating backendrun.LocalRun for current working directory","@timestamp":"2025-05-27T14:00:15.275149+02:00"}
+{"@level":"trace","@message":"Config.VerifyDependencySelections: provider registry.terraform.io/hashicorp/aws has 3.58.0 to satisfy \"3.58.0\"","@timestamp":"2025-05-27T14:00:15.277247+02:00"}
+{"@level":"trace","@message":"terraform.NewContext: starting","@timestamp":"2025-05-27T14:00:15.278293+02:00"}
+{"@level":"trace","@message":"terraform.NewContext: complete","@timestamp":"2025-05-27T14:00:15.278293+02:00"}
+{"@level":"trace","@message":"backend/local: requesting interactive input, if necessary","@timestamp":"2025-05-27T14:00:15.278293+02:00"}
+{"@level":"trace","@message":"LoadSchemas: retrieving schema for provider type \"registry.terraform.io/hashicorp/aws\"","@timestamp":"2025-05-27T14:00:15.278817+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Initializing provider \"registry.terraform.io/hashicorp/aws\" to read its schema","@timestamp":"2025-05-27T14:00:15.279338+02:00"}
+{"@level":"debug","@message":"created provider logger","@timestamp":"2025-05-27T14:00:15.279338+02:00","level":1}
+{"@level":"info","@message":"configuring client automatic mTLS","@module":"provider","@timestamp":"2025-05-27T14:00:15.279867+02:00"}
+{"@level":"debug","@message":"starting plugin","@module":"provider","@timestamp":"2025-05-27T14:00:15.373889+02:00","args":[".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe"],"path":".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe"}
+{"@level":"debug","@message":"plugin started","@module":"provider","@timestamp":"2025-05-27T14:00:15.410907+02:00","path":".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe","pid":31056}
+{"@level":"debug","@message":"waiting for RPC address","@module":"provider","@timestamp":"2025-05-27T14:00:15.410907+02:00","plugin":".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe"}
+{"@level":"info","@message":"configuring server automatic mTLS","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:00:15.650668+02:00","timestamp":"2025-05-27T14:00:15.536+0200"}
+{"@level":"debug","@message":"using plugin","@module":"provider","@timestamp":"2025-05-27T14:00:15.704720+02:00","version":5}
+{"@level":"debug","@message":"plugin address","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:00:15.705207+02:00","address":"127.0.0.1:10000","network":"tcp","timestamp":"2025-05-27T14:00:15.700+0200"}
+{"@level":"trace","@message":"waiting for stdio data","@module":"provider.stdio","@timestamp":"2025-05-27T14:00:15.786366+02:00"}
+{"@level":"trace","@message":"GRPCProvider: GetProviderSchema","@timestamp":"2025-05-27T14:00:15.786366+02:00"}
+{"@level":"trace","@message":"GRPCProvider: Close","@timestamp":"2025-05-27T14:00:15.957245+02:00"}
+{"@level":"debug","@message":"received EOF, stopping recv loop","@module":"provider.stdio","@timestamp":"2025-05-27T14:00:15.961105+02:00","err":"rpc error: code = Unavailable desc = error reading from server: EOF"}
+{"@level":"info","@message":"plugin process exited","@module":"provider","@timestamp":"2025-05-27T14:00:15.965096+02:00","id":"31056","plugin":".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe"}
+{"@level":"debug","@message":"plugin exited","@module":"provider","@timestamp":"2025-05-27T14:00:15.965096+02:00"}
+{"@level":"trace","@message":"Context.Input: Prompting for provider arguments","@timestamp":"2025-05-27T14:00:15.965096+02:00"}
+{"@level":"trace","@message":"Context.Input: Provider provider.aws declared at main.tf:10,1-15","@timestamp":"2025-05-27T14:00:15.965096+02:00"}
+{"@level":"trace","@message":"Context.Input: Input for provider.aws: map[string]cty.Value{}","@timestamp":"2025-05-27T14:00:15.965096+02:00"}
+{"@level":"trace","@message":"backend/local: running validation operation","@timestamp":"2025-05-27T14:00:15.965096+02:00"}
+{"@level":"trace","@message":"LoadSchemas: retrieving schema for provider type \"registry.terraform.io/hashicorp/aws\"","@timestamp":"2025-05-27T14:00:15.965096+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:15.965096+02:00"}
+{"@level":"debug","@message":"Building and walking validate graph","@timestamp":"2025-05-27T14:00:15.965096+02:00"}
+{"@level":"trace","@message":"building graph for walkValidate","@timestamp":"2025-05-27T14:00:15.973176+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ConfigTransformer","@timestamp":"2025-05-27T14:00:15.974178+02:00"}
+{"@level":"trace","@message":"ConfigTransformer: Starting for path:","@timestamp":"2025-05-27T14:00:15.976335+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ConfigTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeValidatableResource\n  ------","@timestamp":"2025-05-27T14:00:15.976335+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.RootVariableTransformer","@timestamp":"2025-05-27T14:00:15.976335+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.RootVariableTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.977331+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ModuleVariableTransformer","@timestamp":"2025-05-27T14:00:15.977331+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ModuleVariableTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.977331+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.variableValidationTransformer","@timestamp":"2025-05-27T14:00:15.977331+02:00"}
+{"@level":"trace","@message":"variableValidationTransformer: adding validation nodes for any existing variable evaluation nodes","@timestamp":"2025-05-27T14:00:15.977331+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.variableValidationTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.977331+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.LocalTransformer","@timestamp":"2025-05-27T14:00:15.977331+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.LocalTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.977331+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.OutputTransformer","@timestamp":"2025-05-27T14:00:15.977331+02:00"}
+{"@level":"trace","@message":"OutputTransformer: adding public_ip as *terraform.nodeExpandOutput","@timestamp":"2025-05-27T14:00:15.977331+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.OutputTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeValidatableResource\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n  ------","@timestamp":"2025-05-27T14:00:15.978333+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.checkTransformer","@timestamp":"2025-05-27T14:00:15.978333+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.checkTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.978333+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.OrphanResourceInstanceTransformer","@timestamp":"2025-05-27T14:00:15.978333+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.978333+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.StateTransformer","@timestamp":"2025-05-27T14:00:15.978333+02:00"}
+{"@level":"trace","@message":"StateTransformer: pointless no-op call, creating no nodes at all","@timestamp":"2025-05-27T14:00:15.978333+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.StateTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.978333+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.AttachStateTransformer","@timestamp":"2025-05-27T14:00:15.979094+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.AttachStateTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.979094+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.OrphanOutputTransformer","@timestamp":"2025-05-27T14:00:15.979094+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.OrphanOutputTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.979094+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.AttachResourceConfigTransformer","@timestamp":"2025-05-27T14:00:15.979094+02:00"}
+{"@level":"trace","@message":"AttachResourceConfigTransformer: attaching to \"aws_instance.my_server\" (*terraform.NodeValidatableResource) config from hcl.Range{Filename:\"main.tf\", Start:hcl.Pos{Line:14, Column:1, Byte:200}, End:hcl.Pos{Line:14, Column:36, Byte:235}}","@timestamp":"2025-05-27T14:00:15.979094+02:00"}
+{"@level":"trace","@message":"AttachResourceConfigTransformer: attaching provider meta configs to aws_instance.my_server","@timestamp":"2025-05-27T14:00:15.979094+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.979094+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.graphTransformerMulti","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Executing graph transform *terraform.externalProviderTransformer","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Completed graph transform *terraform.externalProviderTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeValidatableResource\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n  ------","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"ProviderConfigTransformer: attaching to \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"]\" provider configuration from main.tf:10,1-15","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeValidatableResource\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  ------","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"ProviderTransformer: exact match for provider[\"registry.terraform.io/hashicorp/aws\"] serving aws_instance.my_server","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"debug","@message":"ProviderTransformer: \"aws_instance.my_server\" (*terraform.NodeValidatableResource) needs provider[\"registry.terraform.io/hashicorp/aws\"]","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeValidatableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  ------","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.graphTransformerMulti with new graph:\n  aws_instance.my_server - *terraform.NodeValidatableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  ------","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.RemovedModuleTransformer","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.RemovedModuleTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.AttachSchemaTransformer","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"AttachSchemaTransformer: attaching resource schema to aws_instance.my_server","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"AttachSchemaTransformer: attaching provider config schema to provider[\"registry.terraform.io/hashicorp/aws\"]","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.AttachSchemaTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ModuleExpansionTransformer","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ModuleExpansionTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.980105+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ExternalReferenceTransformer","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ExternalReferenceTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ReferenceTransformer","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"debug","@message":"ReferenceTransformer: \"aws_instance.my_server\" references: []","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"debug","@message":"ReferenceTransformer: \"output.public_ip (expand)\" references: [aws_instance.my_server]","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"debug","@message":"ReferenceTransformer: \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"]\" references: []","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ReferenceTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeValidatableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n    aws_instance.my_server - *terraform.NodeValidatableResource\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  ------","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.AttachDependenciesTransformer","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"AttachDependenciesTransformer: output.public_ip (expand) depends on [aws_instance.my_server]","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.AttachDependenciesTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.attachDataResourceDependsOnTransformer","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.DestroyEdgeTransformer","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.DestroyEdgeTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.pruneUnusedNodesTransformer","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.TargetsTransformer","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.TargetsTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ForcedCBDTransformer","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"ForcedCBDTransformer: \"aws_instance.my_server\" (*terraform.NodeValidatableResource) has no CBD descendant, so skipping","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ForcedCBDTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ephemeralResourceCloseTransformer","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ephemeralResourceCloseTransformer (no changes)","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.CloseProviderTransformer","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.CloseProviderTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeValidatableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n    aws_instance.my_server - *terraform.NodeValidatableResource\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  provider[\"registry.terraform.io/hashicorp/aws\"] (close) - *terraform.graphNodeCloseProvider\n    aws_instance.my_server - *terraform.NodeValidatableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  ------","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.CloseRootModuleTransformer","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.CloseRootModuleTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeValidatableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n    aws_instance.my_server - *terraform.NodeValidatableResource\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  provider[\"registry.terraform.io/hashicorp/aws\"] (close) - *terraform.graphNodeCloseProvider\n    aws_instance.my_server - *terraform.NodeValidatableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  root - *terraform.nodeCloseModule\n    output.public_ip (expand) - *terraform.nodeExpandOutput\n    provider[\"registry.terraform.io/hashicorp/aws\"] (close) - *terraform.graphNodeCloseProvider\n  ------","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.TransitiveReductionTransformer","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.TransitiveReductionTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeValidatableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n    aws_instance.my_server - *terraform.NodeValidatableResource\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  provider[\"registry.terraform.io/hashicorp/aws\"] (close) - *terraform.graphNodeCloseProvider\n    aws_instance.my_server - *terraform.NodeValidatableResource\n  root - *terraform.nodeCloseModule\n    output.public_ip (expand) - *terraform.nodeExpandOutput\n    provider[\"registry.terraform.io/hashicorp/aws\"] (close) - *terraform.graphNodeCloseProvider\n  ------","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"debug","@message":"Starting graph walk: walkValidate","@timestamp":"2025-05-27T14:00:15.982265+02:00"}
+{"@level":"trace","@message":"vertex \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"]\": starting visit (*terraform.NodeApplyableProvider)","@timestamp":"2025-05-27T14:00:15.986281+02:00"}
+{"@level":"trace","@message":"vertex \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"]\": belongs to","@timestamp":"2025-05-27T14:00:15.986281+02:00"}
+{"@level":"debug","@message":"created provider logger","@timestamp":"2025-05-27T14:00:15.986281+02:00","level":1}
+{"@level":"info","@message":"configuring client automatic mTLS","@module":"provider","@timestamp":"2025-05-27T14:00:15.986281+02:00"}
+{"@level":"debug","@message":"starting plugin","@module":"provider","@timestamp":"2025-05-27T14:00:16.019775+02:00","args":[".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe"],"path":".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe"}
+{"@level":"debug","@message":"plugin started","@module":"provider","@timestamp":"2025-05-27T14:00:16.031758+02:00","path":".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe","pid":35308}
+{"@level":"debug","@message":"waiting for RPC address","@module":"provider","@timestamp":"2025-05-27T14:00:16.031758+02:00","plugin":".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe"}
+{"@level":"info","@message":"configuring server automatic mTLS","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:00:16.199040+02:00","timestamp":"2025-05-27T14:00:16.094+0200"}
+{"@level":"debug","@message":"using plugin","@module":"provider","@timestamp":"2025-05-27T14:00:16.259741+02:00","version":5}
+{"@level":"debug","@message":"plugin address","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:00:16.259741+02:00","address":"127.0.0.1:10000","network":"tcp","timestamp":"2025-05-27T14:00:16.259+0200"}
+{"@level":"trace","@message":"BuiltinEvalContext: Initialized \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"]\" provider for provider[\"registry.terraform.io/hashicorp/aws\"]","@timestamp":"2025-05-27T14:00:16.325657+02:00"}
+{"@level":"trace","@message":"waiting for stdio data","@module":"provider.stdio","@timestamp":"2025-05-27T14:00:16.325657+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:16.326210+02:00"}
+{"@level":"trace","@message":"NodeApplyableProvider: validating configuration for provider[\"registry.terraform.io/hashicorp/aws\"]","@timestamp":"2025-05-27T14:00:16.326210+02:00"}
+{"@level":"trace","@message":"buildProviderConfig for provider[\"registry.terraform.io/hashicorp/aws\"]: using explicit config only","@timestamp":"2025-05-27T14:00:16.326210+02:00"}
+{"@level":"trace","@message":"GRPCProvider: GetProviderSchema","@timestamp":"2025-05-27T14:00:16.326210+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:16.409939+02:00"}
+{"@level":"trace","@message":"GRPCProvider: ValidateProviderConfig","@timestamp":"2025-05-27T14:00:16.411569+02:00"}
+{"@level":"trace","@message":"GRPCProvider: GetProviderSchema","@timestamp":"2025-05-27T14:00:16.411569+02:00"}
+{"@level":"trace","@message":"vertex \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"]\": visit complete","@timestamp":"2025-05-27T14:00:16.497522+02:00"}
+{"@level":"trace","@message":"vertex \"aws_instance.my_server\": starting visit (*terraform.NodeValidatableResource)","@timestamp":"2025-05-27T14:00:16.497522+02:00"}
+{"@level":"trace","@message":"vertex \"aws_instance.my_server\": belongs to","@timestamp":"2025-05-27T14:00:16.498061+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:16.498061+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:16.498061+02:00"}
+{"@level":"trace","@message":"GRPCProvider: ValidateResourceConfig","@timestamp":"2025-05-27T14:00:16.498600+02:00"}
+{"@level":"trace","@message":"GRPCProvider: GetProviderSchema","@timestamp":"2025-05-27T14:00:16.498600+02:00"}
+{"@level":"trace","@message":"vertex \"aws_instance.my_server\": visit complete","@timestamp":"2025-05-27T14:00:16.500495+02:00"}
+{"@level":"trace","@message":"vertex \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)\": starting visit (*terraform.graphNodeCloseProvider)","@timestamp":"2025-05-27T14:00:16.500495+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip (expand)\": starting visit (*terraform.nodeExpandOutput)","@timestamp":"2025-05-27T14:00:16.500495+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip (expand)\": does not belong to any module instance","@timestamp":"2025-05-27T14:00:16.500495+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip (expand)\": expanding dynamic subgraph","@timestamp":"2025-05-27T14:00:16.500495+02:00"}
+{"@level":"trace","@message":"vertex \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)\": does not belong to any module instance","@timestamp":"2025-05-27T14:00:16.500495+02:00"}
+{"@level":"trace","@message":"GRPCProvider: Close","@timestamp":"2025-05-27T14:00:16.500495+02:00"}
+{"@level":"trace","@message":"Expanding output: adding output.public_ip as *terraform.NodeApplyableOutput","@timestamp":"2025-05-27T14:00:16.501608+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip (expand)\": entering dynamic subgraph","@timestamp":"2025-05-27T14:00:16.501608+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip\": starting visit (*terraform.NodeApplyableOutput)","@timestamp":"2025-05-27T14:00:16.501608+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip\": belongs to","@timestamp":"2025-05-27T14:00:16.501608+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:16.501608+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:16.501608+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:16.502113+02:00"}
+{"@level":"trace","@message":"setValue: Saving Create change for output.public_ip in changeset","@timestamp":"2025-05-27T14:00:16.502663+02:00"}
+{"@level":"trace","@message":"setValue: Saving value for output.public_ip in state","@timestamp":"2025-05-27T14:00:16.502663+02:00"}
+{"@level":"debug","@message":"received EOF, stopping recv loop","@module":"provider.stdio","@timestamp":"2025-05-27T14:00:16.502663+02:00","err":"rpc error: code = Unavailable desc = error reading from server: EOF"}
+{"@level":"trace","@message":"vertex \"output.public_ip\": visit complete","@timestamp":"2025-05-27T14:00:16.503246+02:00"}
+{"@level":"trace","@message":"vertex \"root\": starting visit (terraform.graphNodeRoot)","@timestamp":"2025-05-27T14:00:16.503246+02:00"}
+{"@level":"trace","@message":"vertex \"root\": does not belong to any module instance","@timestamp":"2025-05-27T14:00:16.503246+02:00"}
+{"@level":"trace","@message":"vertex \"root\": visit complete","@timestamp":"2025-05-27T14:00:16.503246+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip (expand)\": dynamic subgraph completed successfully","@timestamp":"2025-05-27T14:00:16.503246+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip (expand)\": visit complete","@timestamp":"2025-05-27T14:00:16.503246+02:00"}
+{"@level":"info","@message":"plugin process exited","@module":"provider","@timestamp":"2025-05-27T14:00:16.510344+02:00","id":"35308","plugin":".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe"}
+{"@level":"debug","@message":"plugin exited","@module":"provider","@timestamp":"2025-05-27T14:00:16.510344+02:00"}
+{"@level":"trace","@message":"vertex \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)\": visit complete","@timestamp":"2025-05-27T14:00:16.510855+02:00"}
+{"@level":"trace","@message":"vertex \"root\": starting visit (*terraform.nodeCloseModule)","@timestamp":"2025-05-27T14:00:16.510855+02:00"}
+{"@level":"trace","@message":"vertex \"root\": does not belong to any module instance","@timestamp":"2025-05-27T14:00:16.510855+02:00"}
+{"@level":"trace","@message":"vertex \"root\": visit complete","@timestamp":"2025-05-27T14:00:16.511387+02:00"}
+{"@level":"info","@message":"backend/local: plan calling Plan","@timestamp":"2025-05-27T14:00:16.511387+02:00"}
+{"@level":"debug","@message":"Building and walking plan graph for NormalMode","@timestamp":"2025-05-27T14:00:16.511976+02:00"}
+{"@level":"trace","@message":"building graph for walkPlan","@timestamp":"2025-05-27T14:00:16.513595+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ConfigTransformer","@timestamp":"2025-05-27T14:00:16.513595+02:00"}
+{"@level":"trace","@message":"ConfigTransformer: Starting for path:","@timestamp":"2025-05-27T14:00:16.513595+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ConfigTransformer with new graph:\n  aws_instance.my_server (expand) - *terraform.nodeExpandPlannableResource\n  ------","@timestamp":"2025-05-27T14:00:16.514142+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.RootVariableTransformer","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.RootVariableTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ModuleVariableTransformer","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ModuleVariableTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.variableValidationTransformer","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"variableValidationTransformer: adding validation nodes for any existing variable evaluation nodes","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.variableValidationTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.LocalTransformer","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.LocalTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.OutputTransformer","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"OutputTransformer: adding public_ip as *terraform.nodeExpandOutput","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.OutputTransformer with new graph:\n  aws_instance.my_server (expand) - *terraform.nodeExpandPlannableResource\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n  ------","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.checkTransformer","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.checkTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.OrphanResourceInstanceTransformer","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.StateTransformer","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"StateTransformer: creating nodes for deposed instance objects only","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.StateTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.AttachStateTransformer","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.AttachStateTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.OrphanOutputTransformer","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.OrphanOutputTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.AttachResourceConfigTransformer","@timestamp":"2025-05-27T14:00:16.515014+02:00"}
+{"@level":"trace","@message":"AttachResourceConfigTransformer: attaching to \"aws_instance.my_server (expand)\" (*terraform.nodeExpandPlannableResource) config from hcl.Range{Filename:\"main.tf\", Start:hcl.Pos{Line:14, Column:1, Byte:200}, End:hcl.Pos{Line:14, Column:36, Byte:235}}","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"AttachResourceConfigTransformer: attaching provider meta configs to aws_instance.my_server (expand)","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.graphTransformerMulti","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Executing graph transform *terraform.externalProviderTransformer","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Completed graph transform *terraform.externalProviderTransformer with new graph:\n  aws_instance.my_server (expand) - *terraform.nodeExpandPlannableResource\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n  ------","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"ProviderConfigTransformer: attaching to \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"]\" provider configuration from main.tf:10,1-15","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:\n  aws_instance.my_server (expand) - *terraform.nodeExpandPlannableResource\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  ------","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"ProviderTransformer: exact match for provider[\"registry.terraform.io/hashicorp/aws\"] serving aws_instance.my_server (expand)","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"debug","@message":"ProviderTransformer: \"aws_instance.my_server (expand)\" (*terraform.nodeExpandPlannableResource) needs provider[\"registry.terraform.io/hashicorp/aws\"]","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:\n  aws_instance.my_server (expand) - *terraform.nodeExpandPlannableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  ------","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.graphTransformerMulti with new graph:\n  aws_instance.my_server (expand) - *terraform.nodeExpandPlannableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  ------","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.RemovedModuleTransformer","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.RemovedModuleTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.AttachSchemaTransformer","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"AttachSchemaTransformer: attaching resource schema to aws_instance.my_server (expand)","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"AttachSchemaTransformer: attaching provider config schema to provider[\"registry.terraform.io/hashicorp/aws\"]","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.AttachSchemaTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ModuleExpansionTransformer","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ModuleExpansionTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ExternalReferenceTransformer","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ExternalReferenceTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ReferenceTransformer","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"debug","@message":"ReferenceTransformer: \"output.public_ip (expand)\" references: [aws_instance.my_server (expand)]","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"debug","@message":"ReferenceTransformer: \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"]\" references: []","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"debug","@message":"ReferenceTransformer: \"aws_instance.my_server (expand)\" references: []","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ReferenceTransformer with new graph:\n  aws_instance.my_server (expand) - *terraform.nodeExpandPlannableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n    aws_instance.my_server (expand) - *terraform.nodeExpandPlannableResource\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  ------","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.AttachDependenciesTransformer","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"AttachDependenciesTransformer: aws_instance.my_server (expand) depends on []","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"AttachDependenciesTransformer: output.public_ip (expand) depends on [aws_instance.my_server]","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.AttachDependenciesTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.attachDataResourceDependsOnTransformer","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.515653+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.DestroyEdgeTransformer","@timestamp":"2025-05-27T14:00:16.516167+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.DestroyEdgeTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.516167+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.pruneUnusedNodesTransformer","@timestamp":"2025-05-27T14:00:16.516167+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.516167+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.TargetsTransformer","@timestamp":"2025-05-27T14:00:16.516167+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.TargetsTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.516167+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ForcedCBDTransformer","@timestamp":"2025-05-27T14:00:16.516167+02:00"}
+{"@level":"trace","@message":"ForcedCBDTransformer: \"aws_instance.my_server (expand)\" (*terraform.nodeExpandPlannableResource) has no CBD descendant, so skipping","@timestamp":"2025-05-27T14:00:16.516167+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ForcedCBDTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.516241+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ephemeralResourceCloseTransformer","@timestamp":"2025-05-27T14:00:16.516241+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ephemeralResourceCloseTransformer (no changes)","@timestamp":"2025-05-27T14:00:16.516241+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.CloseProviderTransformer","@timestamp":"2025-05-27T14:00:16.516241+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.CloseProviderTransformer with new graph:\n  aws_instance.my_server (expand) - *terraform.nodeExpandPlannableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n    aws_instance.my_server (expand) - *terraform.nodeExpandPlannableResource\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  provider[\"registry.terraform.io/hashicorp/aws\"] (close) - *terraform.graphNodeCloseProvider\n    aws_instance.my_server (expand) - *terraform.nodeExpandPlannableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  ------","@timestamp":"2025-05-27T14:00:16.516241+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.CloseRootModuleTransformer","@timestamp":"2025-05-27T14:00:16.516241+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.CloseRootModuleTransformer with new graph:\n  aws_instance.my_server (expand) - *terraform.nodeExpandPlannableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n    aws_instance.my_server (expand) - *terraform.nodeExpandPlannableResource\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  provider[\"registry.terraform.io/hashicorp/aws\"] (close) - *terraform.graphNodeCloseProvider\n    aws_instance.my_server (expand) - *terraform.nodeExpandPlannableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  root - *terraform.nodeCloseModule\n    output.public_ip (expand) - *terraform.nodeExpandOutput\n    provider[\"registry.terraform.io/hashicorp/aws\"] (close) - *terraform.graphNodeCloseProvider\n  ------","@timestamp":"2025-05-27T14:00:16.516241+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.TransitiveReductionTransformer","@timestamp":"2025-05-27T14:00:16.516241+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.TransitiveReductionTransformer with new graph:\n  aws_instance.my_server (expand) - *terraform.nodeExpandPlannableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n    aws_instance.my_server (expand) - *terraform.nodeExpandPlannableResource\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  provider[\"registry.terraform.io/hashicorp/aws\"] (close) - *terraform.graphNodeCloseProvider\n    aws_instance.my_server (expand) - *terraform.nodeExpandPlannableResource\n  root - *terraform.nodeCloseModule\n    output.public_ip (expand) - *terraform.nodeExpandOutput\n    provider[\"registry.terraform.io/hashicorp/aws\"] (close) - *terraform.graphNodeCloseProvider\n  ------","@timestamp":"2025-05-27T14:00:16.516241+02:00"}
+{"@level":"debug","@message":"Starting graph walk: walkPlan","@timestamp":"2025-05-27T14:00:16.516241+02:00"}
+{"@level":"trace","@message":"vertex \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"]\": starting visit (*terraform.NodeApplyableProvider)","@timestamp":"2025-05-27T14:00:16.516241+02:00"}
+{"@level":"trace","@message":"vertex \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"]\": belongs to","@timestamp":"2025-05-27T14:00:16.516241+02:00"}
+{"@level":"debug","@message":"created provider logger","@timestamp":"2025-05-27T14:00:16.516759+02:00","level":1}
+{"@level":"info","@message":"configuring client automatic mTLS","@module":"provider","@timestamp":"2025-05-27T14:00:16.516759+02:00"}
+{"@level":"debug","@message":"starting plugin","@module":"provider","@timestamp":"2025-05-27T14:00:16.539110+02:00","args":[".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe"],"path":".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe"}
+{"@level":"debug","@message":"plugin started","@module":"provider","@timestamp":"2025-05-27T14:00:16.555834+02:00","path":".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe","pid":42588}
+{"@level":"debug","@message":"waiting for RPC address","@module":"provider","@timestamp":"2025-05-27T14:00:16.558804+02:00","plugin":".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe"}
+{"@level":"info","@message":"configuring server automatic mTLS","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:00:16.737425+02:00","timestamp":"2025-05-27T14:00:16.622+0200"}
+{"@level":"debug","@message":"plugin address","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:00:16.800367+02:00","address":"127.0.0.1:10000","network":"tcp","timestamp":"2025-05-27T14:00:16.800+0200"}
+{"@level":"debug","@message":"using plugin","@module":"provider","@timestamp":"2025-05-27T14:00:16.800877+02:00","version":5}
+{"@level":"trace","@message":"BuiltinEvalContext: Initialized \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"]\" provider for provider[\"registry.terraform.io/hashicorp/aws\"]","@timestamp":"2025-05-27T14:00:16.864186+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:16.864186+02:00"}
+{"@level":"trace","@message":"NodeApplyableProvider: configuring provider[\"registry.terraform.io/hashicorp/aws\"]","@timestamp":"2025-05-27T14:00:16.864186+02:00"}
+{"@level":"trace","@message":"waiting for stdio data","@module":"provider.stdio","@timestamp":"2025-05-27T14:00:16.864186+02:00"}
+{"@level":"trace","@message":"buildProviderConfig for provider[\"registry.terraform.io/hashicorp/aws\"]: using explicit config only","@timestamp":"2025-05-27T14:00:16.864186+02:00"}
+{"@level":"trace","@message":"GRPCProvider: GetProviderSchema","@timestamp":"2025-05-27T14:00:16.864186+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:16.986806+02:00"}
+{"@level":"trace","@message":"GRPCProvider: ValidateProviderConfig","@timestamp":"2025-05-27T14:00:16.988593+02:00"}
+{"@level":"trace","@message":"GRPCProvider: GetProviderSchema","@timestamp":"2025-05-27T14:00:16.988593+02:00"}
+{"@level":"warn","@message":"ValidateProviderConfig from \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"]\" changed the config value, but that value is unused","@timestamp":"2025-05-27T14:00:17.104167+02:00"}
+{"@level":"trace","@message":"GRPCProvider: ConfigureProvider","@timestamp":"2025-05-27T14:00:17.104167+02:00"}
+{"@level":"trace","@message":"GRPCProvider: GetProviderSchema","@timestamp":"2025-05-27T14:00:17.104167+02:00"}
+{"@level":"info","@message":"2025/05/27 14:00:17 [WARN] Invalid log level: \"JSON\". Defaulting to level: TRACE. Valid levels are: [TRACE DEBUG INFO WARN ERROR]","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:00:17.105897+02:00","timestamp":"2025-05-27T14:00:17.105+0200"}
+{"@level":"info","@message":"2025/05/27 14:00:17 [INFO] AWS Auth provider used: \"SharedCredentialsProvider\"","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:00:17.106942+02:00","timestamp":"2025-05-27T14:00:17.106+0200"}
+{"@level":"info","@message":"2025/05/27 14:00:17 [DEBUG] Trying to get account information via sts:GetCallerIdentity","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:00:17.108012+02:00","timestamp":"2025-05-27T14:00:17.108+0200"}
+{"@level":"info","@message":"2025/05/27 14:00:17 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:\n---[ REQUEST POST-SIGN ]-----------------------------\nPOST / HTTP/1.1\r\nHost: sts.amazonaws.com\r\nUser-Agent: APN/1.0 HashiCorp/1.0 Terraform/1.11.4 (+https://www.terraform.io) terraform-provider-aws/3.58.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.40.37 (go1.16; windows; 386)\r\nContent-Length: 43\r\nAuthorization: AWS4-HMAC-SHA256 Credential=AKIAZGFTZZ4JX4OTEX7O/20250527/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date, Signature=7098b76d218242c0e880184333b370e1cd6604ec74c579a54c1eb7a0b85a8dad\r\nContent-Type: application/x-www-form-urlencoded; charset=utf-8\r\nX-Amz-Date: 20250527T120017Z\r\nAccept-Encoding: gzip\r\n\r\nAction=GetCallerIdentity\u0026Version=2011-06-15\n-----------------------------------------------------","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:00:17.108541+02:00","timestamp":"2025-05-27T14:00:17.108+0200"}
+{"@level":"info","@message":"2025/05/27 14:00:17 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:\n---[ RESPONSE ]--------------------------------------\nHTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 409\r\nContent-Type: text/xml\r\nDate: Tue, 27 May 2025 12:00:17 GMT\r\nX-Amzn-Requestid: 25999740-79f4-4ed7-8bff-62fe2ecbefa0\r\n\r\n\n-----------------------------------------------------","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:00:17.791465+02:00","timestamp":"2025-05-27T14:00:17.791+0200"}
+{"@level":"info","@message":"2025/05/27 14:00:17 [DEBUG] [aws-sdk-go] \u003cGetCallerIdentityResponse xmlns=\"https://sts.amazonaws.com/doc/2011-06-15/\"\u003e\n  \u003cGetCallerIdentityResult\u003e\n    \u003cArn\u003earn:aws:iam::631737274131:user/lb-aws-admin\u003c/Arn\u003e\n    \u003cUserId\u003eAIDAZGFTZZ4JR6DWRTJEA\u003c/UserId\u003e\n    \u003cAccount\u003e631737274131\u003c/Account\u003e\n  \u003c/GetCallerIdentityResult\u003e\n  \u003cResponseMetadata\u003e\n    \u003cRequestId\u003e25999740-79f4-4ed7-8bff-62fe2ecbefa0\u003c/RequestId\u003e\n  \u003c/ResponseMetadata\u003e\n\u003c/GetCallerIdentityResponse\u003e","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:00:17.794086+02:00","timestamp":"2025-05-27T14:00:17.791+0200"}
+{"@level":"info","@message":"2025/05/27 14:00:17 [DEBUG] Trying to get account information via sts:GetCallerIdentity","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:00:17.794086+02:00","timestamp":"2025-05-27T14:00:17.791+0200"}
+{"@level":"info","@message":"2025/05/27 14:00:17 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:\n---[ REQUEST POST-SIGN ]-----------------------------\nPOST / HTTP/1.1\r\nHost: sts.amazonaws.com\r\nUser-Agent: APN/1.0 HashiCorp/1.0 Terraform/1.11.4 (+https://www.terraform.io) terraform-provider-aws/3.58.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.40.37 (go1.16; windows; 386)\r\nContent-Length: 43\r\nAuthorization: AWS4-HMAC-SHA256 Credential=AKIAZGFTZZ4JX4OTEX7O/20250527/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date, Signature=7098b76d218242c0e880184333b370e1cd6604ec74c579a54c1eb7a0b85a8dad\r\nContent-Type: application/x-www-form-urlencoded; charset=utf-8\r\nX-Amz-Date: 20250527T120017Z\r\nAccept-Encoding: gzip\r\n\r\nAction=GetCallerIdentity\u0026Version=2011-06-15\n-----------------------------------------------------","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:00:17.794086+02:00","timestamp":"2025-05-27T14:00:17.791+0200"}
+{"@level":"info","@message":"2025/05/27 14:00:18 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:\n---[ RESPONSE ]--------------------------------------\nHTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 409\r\nContent-Type: text/xml\r\nDate: Tue, 27 May 2025 12:00:18 GMT\r\nX-Amzn-Requestid: db9db141-e8c9-4d91-8fb8-4bac283f2406\r\n\r\n\n-----------------------------------------------------","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:00:18.341929+02:00","timestamp":"2025-05-27T14:00:18.341+0200"}
+{"@level":"info","@message":"2025/05/27 14:00:18 [DEBUG] [aws-sdk-go] \u003cGetCallerIdentityResponse xmlns=\"https://sts.amazonaws.com/doc/2011-06-15/\"\u003e\n  \u003cGetCallerIdentityResult\u003e\n    \u003cArn\u003earn:aws:iam::631737274131:user/lb-aws-admin\u003c/Arn\u003e\n    \u003cUserId\u003eAIDAZGFTZZ4JR6DWRTJEA\u003c/UserId\u003e\n    \u003cAccount\u003e631737274131\u003c/Account\u003e\n  \u003c/GetCallerIdentityResult\u003e\n  \u003cResponseMetadata\u003e\n    \u003cRequestId\u003edb9db141-e8c9-4d91-8fb8-4bac283f2406\u003c/RequestId\u003e\n  \u003c/ResponseMetadata\u003e\n\u003c/GetCallerIdentityResponse\u003e","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:00:18.341929+02:00","timestamp":"2025-05-27T14:00:18.341+0200"}
+{"@level":"info","@message":"2025/05/27 14:00:18 [DEBUG] [aws-sdk-go] DEBUG: Request ec2/DescribeAccountAttributes Details:\n---[ REQUEST POST-SIGN ]-----------------------------\nPOST / HTTP/1.1\r\nHost: ec2.us-east-1.amazonaws.com\r\nUser-Agent: APN/1.0 HashiCorp/1.0 Terraform/1.11.4 (+https://www.terraform.io) terraform-provider-aws/3.58.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.40.37 (go1.16; windows; 386)\r\nContent-Length: 87\r\nAuthorization: AWS4-HMAC-SHA256 Credential=AKIAZGFTZZ4JX4OTEX7O/20250527/us-east-1/ec2/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date, Signature=545e6dd3ace945ad9adb90a6add3637606fd714f910464f4cf01bf69d678b988\r\nContent-Type: application/x-www-form-urlencoded; charset=utf-8\r\nX-Amz-Date: 20250527T120018Z\r\nAccept-Encoding: gzip\r\n\r\nAction=DescribeAccountAttributes\u0026AttributeName.1=supported-platforms\u0026Version=2016-11-15\n-----------------------------------------------------","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:00:18.353530+02:00","timestamp":"2025-05-27T14:00:18.353+0200"}
+{"@level":"info","@message":"2025/05/27 14:00:19 [DEBUG] [aws-sdk-go] DEBUG: Response ec2/DescribeAccountAttributes Details:\n---[ RESPONSE ]--------------------------------------\nHTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 540\r\nCache-Control: no-cache, no-store\r\nContent-Type: text/xml;charset=UTF-8\r\nDate: Tue, 27 May 2025 12:00:19 GMT\r\nKeep-Alive: timeout=20\r\nServer: AmazonEC2\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Amzn-Requestid: 441b010e-4fbc-4f00-8984-431dab361713\r\n\r\n\n-----------------------------------------------------","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:00:19.152013+02:00","timestamp":"2025-05-27T14:00:19.152+0200"}
+{"@level":"info","@message":"2025/05/27 14:00:19 [DEBUG] [aws-sdk-go] \u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\n\u003cDescribeAccountAttributesResponse xmlns=\"http://ec2.amazonaws.com/doc/2016-11-15/\"\u003e\n    \u003crequestId\u003e441b010e-4fbc-4f00-8984-431dab361713\u003c/requestId\u003e\n    \u003caccountAttributeSet\u003e\n        \u003citem\u003e\n            \u003cattributeName\u003esupported-platforms\u003c/attributeName\u003e\n            \u003cattributeValueSet\u003e\n                \u003citem\u003e\n                    \u003cattributeValue\u003eVPC\u003c/attributeValue\u003e\n                \u003c/item\u003e\n            \u003c/attributeValueSet\u003e\n        \u003c/item\u003e\n    \u003c/accountAttributeSet\u003e\n\u003c/DescribeAccountAttributesResponse\u003e","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:00:19.152013+02:00","timestamp":"2025-05-27T14:00:19.152+0200"}
+{"@level":"trace","@message":"vertex \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"]\": visit complete","@timestamp":"2025-05-27T14:00:19.153183+02:00"}
+{"@level":"trace","@message":"vertex \"aws_instance.my_server (expand)\": starting visit (*terraform.nodeExpandPlannableResource)","@timestamp":"2025-05-27T14:00:19.153183+02:00"}
+{"@level":"trace","@message":"vertex \"aws_instance.my_server (expand)\": does not belong to any module instance","@timestamp":"2025-05-27T14:00:19.153183+02:00"}
+{"@level":"trace","@message":"vertex \"aws_instance.my_server (expand)\": expanding dynamic subgraph","@timestamp":"2025-05-27T14:00:19.153183+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ResourceCountTransformer","@timestamp":"2025-05-27T14:00:19.156236+02:00"}
+{"@level":"trace","@message":"ResourceCountTransformer: adding aws_instance.my_server as *terraform.NodePlannableResourceInstance","@timestamp":"2025-05-27T14:00:19.156863+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ResourceCountTransformer with new graph:\n  aws_instance.my_server - *terraform.NodePlannableResourceInstance\n  ------","@timestamp":"2025-05-27T14:00:19.156863+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.OrphanResourceInstanceCountTransformer","@timestamp":"2025-05-27T14:00:19.157377+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.OrphanResourceInstanceCountTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.157377+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.AttachStateTransformer","@timestamp":"2025-05-27T14:00:19.157377+02:00"}
+{"@level":"debug","@message":"Resource instance state not found for node \"aws_instance.my_server\", instance aws_instance.my_server","@timestamp":"2025-05-27T14:00:19.157377+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.AttachStateTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.157377+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.TargetsTransformer","@timestamp":"2025-05-27T14:00:19.157377+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.TargetsTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.157377+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ReferenceTransformer","@timestamp":"2025-05-27T14:00:19.157377+02:00"}
+{"@level":"debug","@message":"ReferenceTransformer: \"aws_instance.my_server\" references: []","@timestamp":"2025-05-27T14:00:19.157377+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ReferenceTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.157377+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.RootTransformer","@timestamp":"2025-05-27T14:00:19.157377+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.RootTransformer with new graph:\n  aws_instance.my_server - *terraform.NodePlannableResourceInstance\n  root - terraform.graphNodeRoot\n    aws_instance.my_server - *terraform.NodePlannableResourceInstance\n  ------","@timestamp":"2025-05-27T14:00:19.157377+02:00"}
+{"@level":"trace","@message":"vertex \"aws_instance.my_server (expand)\": entering dynamic subgraph","@timestamp":"2025-05-27T14:00:19.157377+02:00"}
+{"@level":"trace","@message":"vertex \"aws_instance.my_server\": starting visit (*terraform.NodePlannableResourceInstance)","@timestamp":"2025-05-27T14:00:19.157377+02:00"}
+{"@level":"trace","@message":"vertex \"aws_instance.my_server\": belongs to","@timestamp":"2025-05-27T14:00:19.157377+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:19.157377+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:19.157933+02:00"}
+{"@level":"trace","@message":"readResourceInstanceState: reading state for aws_instance.my_server","@timestamp":"2025-05-27T14:00:19.160163+02:00"}
+{"@level":"trace","@message":"readResourceInstanceState: no state present for aws_instance.my_server","@timestamp":"2025-05-27T14:00:19.160163+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:19.160163+02:00"}
+{"@level":"trace","@message":"NodeAbstractResouceInstance.writeResourceInstanceState to prevRunState for aws_instance.my_server","@timestamp":"2025-05-27T14:00:19.160163+02:00"}
+{"@level":"trace","@message":"NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for aws_instance.my_server","@timestamp":"2025-05-27T14:00:19.160163+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:19.160163+02:00"}
+{"@level":"trace","@message":"NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for aws_instance.my_server","@timestamp":"2025-05-27T14:00:19.160163+02:00"}
+{"@level":"trace","@message":"NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for aws_instance.my_server","@timestamp":"2025-05-27T14:00:19.160163+02:00"}
+{"@level":"trace","@message":"NodeAbstractResourceInstance.refresh for aws_instance.my_server","@timestamp":"2025-05-27T14:00:19.160163+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:19.160163+02:00"}
+{"@level":"debug","@message":"refresh: aws_instance.my_server: no state, so not refreshing","@timestamp":"2025-05-27T14:00:19.160163+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:19.160163+02:00"}
+{"@level":"trace","@message":"NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for aws_instance.my_server","@timestamp":"2025-05-27T14:00:19.160163+02:00"}
+{"@level":"trace","@message":"NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for aws_instance.my_server","@timestamp":"2025-05-27T14:00:19.160163+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:19.160163+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:19.160721+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:19.161275+02:00"}
+{"@level":"trace","@message":"Re-validating config for \"aws_instance.my_server\"","@timestamp":"2025-05-27T14:00:19.161275+02:00"}
+{"@level":"trace","@message":"GRPCProvider: ValidateResourceConfig","@timestamp":"2025-05-27T14:00:19.161870+02:00"}
+{"@level":"trace","@message":"GRPCProvider: GetProviderSchema","@timestamp":"2025-05-27T14:00:19.161870+02:00"}
+{"@level":"trace","@message":"GRPCProvider: PlanResourceChange","@timestamp":"2025-05-27T14:00:19.163404+02:00"}
+{"@level":"trace","@message":"GRPCProvider: GetProviderSchema","@timestamp":"2025-05-27T14:00:19.163404+02:00"}
+{"@level":"warn","@message":"Provider \"registry.terraform.io/hashicorp/aws\" produced an invalid plan for aws_instance.my_server, but we are tolerating it because it is using the legacy plugin SDK.\n    The following problems may be the cause of any confusing errors from downstream operations:\n      - .source_dest_check: planned value cty.True for a non-computed attribute\n      - .get_password_data: planned value cty.False for a non-computed attribute\n      - .metadata_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead\n      - .root_block_device: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead\n      - .capacity_reservation_specification: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead\n      - .ebs_block_device: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead\n      - .ephemeral_block_device: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead\n      - .enclave_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead\n      - .network_interface: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead","@timestamp":"2025-05-27T14:00:19.173526+02:00"}
+{"@level":"trace","@message":"writeChange: recorded Create change for aws_instance.my_server","@timestamp":"2025-05-27T14:00:19.174078+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:19.174078+02:00"}
+{"@level":"trace","@message":"NodeAbstractResouceInstance.writeResourceInstanceState to workingState for aws_instance.my_server","@timestamp":"2025-05-27T14:00:19.174078+02:00"}
+{"@level":"trace","@message":"NodeAbstractResouceInstance.writeResourceInstanceState: writing state object for aws_instance.my_server","@timestamp":"2025-05-27T14:00:19.174078+02:00"}
+{"@level":"trace","@message":"vertex \"aws_instance.my_server\": visit complete","@timestamp":"2025-05-27T14:00:19.174638+02:00"}
+{"@level":"trace","@message":"vertex \"root\": starting visit (terraform.graphNodeRoot)","@timestamp":"2025-05-27T14:00:19.174638+02:00"}
+{"@level":"trace","@message":"vertex \"root\": does not belong to any module instance","@timestamp":"2025-05-27T14:00:19.174638+02:00"}
+{"@level":"trace","@message":"vertex \"root\": visit complete","@timestamp":"2025-05-27T14:00:19.174638+02:00"}
+{"@level":"trace","@message":"vertex \"aws_instance.my_server (expand)\": dynamic subgraph completed successfully","@timestamp":"2025-05-27T14:00:19.174638+02:00"}
+{"@level":"trace","@message":"vertex \"aws_instance.my_server (expand)\": visit complete","@timestamp":"2025-05-27T14:00:19.174638+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip (expand)\": starting visit (*terraform.nodeExpandOutput)","@timestamp":"2025-05-27T14:00:19.174638+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip (expand)\": does not belong to any module instance","@timestamp":"2025-05-27T14:00:19.174638+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip (expand)\": expanding dynamic subgraph","@timestamp":"2025-05-27T14:00:19.174638+02:00"}
+{"@level":"trace","@message":"vertex \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)\": starting visit (*terraform.graphNodeCloseProvider)","@timestamp":"2025-05-27T14:00:19.174638+02:00"}
+{"@level":"trace","@message":"vertex \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)\": does not belong to any module instance","@timestamp":"2025-05-27T14:00:19.174638+02:00"}
+{"@level":"trace","@message":"GRPCProvider: Close","@timestamp":"2025-05-27T14:00:19.174638+02:00"}
+{"@level":"trace","@message":"Expanding output: adding output.public_ip as *terraform.NodeApplyableOutput","@timestamp":"2025-05-27T14:00:19.174638+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip (expand)\": entering dynamic subgraph","@timestamp":"2025-05-27T14:00:19.174638+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip\": starting visit (*terraform.NodeApplyableOutput)","@timestamp":"2025-05-27T14:00:19.174638+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip\": belongs to","@timestamp":"2025-05-27T14:00:19.174638+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:19.174638+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:19.175178+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:19.175178+02:00"}
+{"@level":"debug","@message":"received EOF, stopping recv loop","@module":"provider.stdio","@timestamp":"2025-05-27T14:00:19.175178+02:00","err":"rpc error: code = Unavailable desc = error reading from server: EOF"}
+{"@level":"trace","@message":"setValue: Saving Create change for output.public_ip in changeset","@timestamp":"2025-05-27T14:00:19.176242+02:00"}
+{"@level":"trace","@message":"setValue: Saving value for output.public_ip in state","@timestamp":"2025-05-27T14:00:19.176242+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip\": visit complete","@timestamp":"2025-05-27T14:00:19.176242+02:00"}
+{"@level":"trace","@message":"vertex \"root\": starting visit (terraform.graphNodeRoot)","@timestamp":"2025-05-27T14:00:19.176242+02:00"}
+{"@level":"trace","@message":"vertex \"root\": does not belong to any module instance","@timestamp":"2025-05-27T14:00:19.176242+02:00"}
+{"@level":"trace","@message":"vertex \"root\": visit complete","@timestamp":"2025-05-27T14:00:19.176242+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip (expand)\": dynamic subgraph completed successfully","@timestamp":"2025-05-27T14:00:19.176242+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip (expand)\": visit complete","@timestamp":"2025-05-27T14:00:19.176242+02:00"}
+{"@level":"info","@message":"plugin process exited","@module":"provider","@timestamp":"2025-05-27T14:00:19.183799+02:00","id":"42588","plugin":".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe"}
+{"@level":"debug","@message":"plugin exited","@module":"provider","@timestamp":"2025-05-27T14:00:19.183799+02:00"}
+{"@level":"trace","@message":"vertex \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)\": visit complete","@timestamp":"2025-05-27T14:00:19.183799+02:00"}
+{"@level":"trace","@message":"vertex \"root\": starting visit (*terraform.nodeCloseModule)","@timestamp":"2025-05-27T14:00:19.183799+02:00"}
+{"@level":"trace","@message":"vertex \"root\": does not belong to any module instance","@timestamp":"2025-05-27T14:00:19.183799+02:00"}
+{"@level":"trace","@message":"vertex \"root\": visit complete","@timestamp":"2025-05-27T14:00:19.183799+02:00"}
+{"@level":"trace","@message":"LoadSchemas: retrieving schema for provider type \"registry.terraform.io/hashicorp/aws\"","@timestamp":"2025-05-27T14:00:19.183799+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:19.183799+02:00"}
+{"@level":"trace","@message":"LoadSchemas: retrieving schema for provider type \"registry.terraform.io/hashicorp/aws\"","@timestamp":"2025-05-27T14:00:19.183799+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:19.183799+02:00"}
+{"@level":"trace","@message":"Plan is complete","@timestamp":"2025-05-27T14:00:19.184827+02:00"}
+{"@level":"trace","@message":"Plan is applyable","@timestamp":"2025-05-27T14:00:19.184827+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:19.184827+02:00"}
+{"@level":"trace","@message":"LoadSchemas: retrieving schema for provider type \"registry.terraform.io/hashicorp/aws\"","@timestamp":"2025-05-27T14:00:19.184827+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:19.184827+02:00"}
+{"@level":"debug","@message":"building apply graph to check for errors","@timestamp":"2025-05-27T14:00:19.184827+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ConfigTransformer","@timestamp":"2025-05-27T14:00:19.185352+02:00"}
+{"@level":"trace","@message":"ConfigTransformer: Starting for path:","@timestamp":"2025-05-27T14:00:19.185352+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ConfigTransformer with new graph:\n  aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n  ------","@timestamp":"2025-05-27T14:00:19.185352+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.RootVariableTransformer","@timestamp":"2025-05-27T14:00:19.185352+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.RootVariableTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.185352+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ModuleVariableTransformer","@timestamp":"2025-05-27T14:00:19.185352+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ModuleVariableTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.185352+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.variableValidationTransformer","@timestamp":"2025-05-27T14:00:19.185352+02:00"}
+{"@level":"trace","@message":"variableValidationTransformer: adding validation nodes for any existing variable evaluation nodes","@timestamp":"2025-05-27T14:00:19.185352+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.variableValidationTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.185352+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.LocalTransformer","@timestamp":"2025-05-27T14:00:19.185352+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.LocalTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.185352+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.OutputTransformer","@timestamp":"2025-05-27T14:00:19.185352+02:00"}
+{"@level":"trace","@message":"OutputTransformer: adding public_ip as *terraform.nodeExpandOutput","@timestamp":"2025-05-27T14:00:19.185352+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.OutputTransformer with new graph:\n  aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n  ------","@timestamp":"2025-05-27T14:00:19.185352+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.DiffTransformer","@timestamp":"2025-05-27T14:00:19.185352+02:00"}
+{"@level":"trace","@message":"DiffTransformer starting","@timestamp":"2025-05-27T14:00:19.185352+02:00"}
+{"@level":"trace","@message":"DiffTransformer: found Create change for aws_instance.my_server","@timestamp":"2025-05-27T14:00:19.185880+02:00"}
+{"@level":"trace","@message":"DiffTransformer: aws_instance.my_server will be represented by aws_instance.my_server","@timestamp":"2025-05-27T14:00:19.185880+02:00"}
+{"@level":"trace","@message":"DiffTransformer complete","@timestamp":"2025-05-27T14:00:19.185880+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.DiffTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeApplyableResourceInstance\n    aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n  aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n  ------","@timestamp":"2025-05-27T14:00:19.185880+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.DeferredTransformer","@timestamp":"2025-05-27T14:00:19.185880+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.DeferredTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.185880+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.checkTransformer","@timestamp":"2025-05-27T14:00:19.185880+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.checkTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.185880+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.AttachStateTransformer","@timestamp":"2025-05-27T14:00:19.185880+02:00"}
+{"@level":"debug","@message":"Resource state not found for node \"aws_instance.my_server\", instance aws_instance.my_server","@timestamp":"2025-05-27T14:00:19.185880+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.AttachStateTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.185880+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.OrphanOutputTransformer","@timestamp":"2025-05-27T14:00:19.185880+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.OrphanOutputTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.185880+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.AttachResourceConfigTransformer","@timestamp":"2025-05-27T14:00:19.185880+02:00"}
+{"@level":"trace","@message":"AttachResourceConfigTransformer: attaching to \"aws_instance.my_server\" (*terraform.NodeApplyableResourceInstance) config from hcl.Range{Filename:\"main.tf\", Start:hcl.Pos{Line:14, Column:1, Byte:200}, End:hcl.Pos{Line:14, Column:36, Byte:235}}","@timestamp":"2025-05-27T14:00:19.185880+02:00"}
+{"@level":"trace","@message":"AttachResourceConfigTransformer: attaching provider meta configs to aws_instance.my_server","@timestamp":"2025-05-27T14:00:19.185880+02:00"}
+{"@level":"trace","@message":"AttachResourceConfigTransformer: attaching to \"aws_instance.my_server (expand)\" (*terraform.nodeExpandApplyableResource) config from hcl.Range{Filename:\"main.tf\", Start:hcl.Pos{Line:14, Column:1, Byte:200}, End:hcl.Pos{Line:14, Column:36, Byte:235}}","@timestamp":"2025-05-27T14:00:19.185880+02:00"}
+{"@level":"trace","@message":"AttachResourceConfigTransformer: attaching provider meta configs to aws_instance.my_server (expand)","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.graphTransformerMulti","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Executing graph transform *terraform.externalProviderTransformer","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Completed graph transform *terraform.externalProviderTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeApplyableResourceInstance\n    aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n  aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n  ------","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"ProviderConfigTransformer: attaching to \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"]\" provider configuration from main.tf:10,1-15","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeApplyableResourceInstance\n    aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n  aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  ------","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"ProviderTransformer: exact match for provider[\"registry.terraform.io/hashicorp/aws\"] serving aws_instance.my_server","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"debug","@message":"ProviderTransformer: \"aws_instance.my_server\" (*terraform.NodeApplyableResourceInstance) needs provider[\"registry.terraform.io/hashicorp/aws\"]","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"ProviderTransformer: exact match for provider[\"registry.terraform.io/hashicorp/aws\"] serving aws_instance.my_server (expand)","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"debug","@message":"ProviderTransformer: \"aws_instance.my_server (expand)\" (*terraform.nodeExpandApplyableResource) needs provider[\"registry.terraform.io/hashicorp/aws\"]","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeApplyableResourceInstance\n    aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  ------","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.graphTransformerMulti with new graph:\n  aws_instance.my_server - *terraform.NodeApplyableResourceInstance\n    aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  ------","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.RemovedModuleTransformer","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.RemovedModuleTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.AttachSchemaTransformer","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"AttachSchemaTransformer: attaching resource schema to aws_instance.my_server (expand)","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"AttachSchemaTransformer: attaching resource schema to aws_instance.my_server","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"AttachSchemaTransformer: attaching provider config schema to provider[\"registry.terraform.io/hashicorp/aws\"]","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.AttachSchemaTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ModuleExpansionTransformer","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ModuleExpansionTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ExternalReferenceTransformer","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ExternalReferenceTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ReferenceTransformer","@timestamp":"2025-05-27T14:00:19.186398+02:00"}
+{"@level":"debug","@message":"ReferenceTransformer: \"aws_instance.my_server\" references: []","@timestamp":"2025-05-27T14:00:19.186918+02:00"}
+{"@level":"debug","@message":"ReferenceTransformer: \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"]\" references: []","@timestamp":"2025-05-27T14:00:19.186918+02:00"}
+{"@level":"debug","@message":"ReferenceTransformer: \"aws_instance.my_server (expand)\" references: []","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"debug","@message":"ReferenceTransformer: \"output.public_ip (expand)\" references: [aws_instance.my_server aws_instance.my_server aws_instance.my_server (expand)]","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ReferenceTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeApplyableResourceInstance\n    aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n    aws_instance.my_server - *terraform.NodeApplyableResourceInstance\n    aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  ------","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.AttachDependenciesTransformer","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"AttachDependenciesTransformer: output.public_ip (expand) depends on [aws_instance.my_server]","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"AttachDependenciesTransformer: aws_instance.my_server depends on []","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.AttachDependenciesTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.checkStartTransformer","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.checkStartTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ForcedCBDTransformer","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"ForcedCBDTransformer: \"aws_instance.my_server (expand)\" (*terraform.nodeExpandApplyableResource) has no CBD descendant, so skipping","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"ForcedCBDTransformer: \"aws_instance.my_server\" (*terraform.NodeApplyableResourceInstance) has no CBD descendant, so skipping","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ForcedCBDTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.DestroyEdgeTransformer","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.DestroyEdgeTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.CBDEdgeTransformer","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.CBDEdgeTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.pruneUnusedNodesTransformer","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.TargetsTransformer","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.TargetsTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ephemeralResourceCloseTransformer","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ephemeralResourceCloseTransformer (no changes)","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.CloseProviderTransformer","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.CloseProviderTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeApplyableResourceInstance\n    aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n    aws_instance.my_server - *terraform.NodeApplyableResourceInstance\n    aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  provider[\"registry.terraform.io/hashicorp/aws\"] (close) - *terraform.graphNodeCloseProvider\n    aws_instance.my_server - *terraform.NodeApplyableResourceInstance\n    aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  ------","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.CloseRootModuleTransformer","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.CloseRootModuleTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeApplyableResourceInstance\n    aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n    aws_instance.my_server - *terraform.NodeApplyableResourceInstance\n    aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  provider[\"registry.terraform.io/hashicorp/aws\"] (close) - *terraform.graphNodeCloseProvider\n    aws_instance.my_server - *terraform.NodeApplyableResourceInstance\n    aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  root - *terraform.nodeCloseModule\n    output.public_ip (expand) - *terraform.nodeExpandOutput\n    provider[\"registry.terraform.io/hashicorp/aws\"] (close) - *terraform.graphNodeCloseProvider\n  ------","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.TransitiveReductionTransformer","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.TransitiveReductionTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeApplyableResourceInstance\n    aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n  aws_instance.my_server (expand) - *terraform.nodeExpandApplyableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n    aws_instance.my_server - *terraform.NodeApplyableResourceInstance\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  provider[\"registry.terraform.io/hashicorp/aws\"] (close) - *terraform.graphNodeCloseProvider\n    aws_instance.my_server - *terraform.NodeApplyableResourceInstance\n  root - *terraform.nodeCloseModule\n    output.public_ip (expand) - *terraform.nodeExpandOutput\n    provider[\"registry.terraform.io/hashicorp/aws\"] (close) - *terraform.graphNodeCloseProvider\n  ------","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"info","@message":"backend/local: plan operation completed","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"LoadSchemas: retrieving schema for provider type \"registry.terraform.io/hashicorp/aws\"","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:00:19.187852+02:00"}
+{"@level":"trace","@message":"statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info","@timestamp":"2025-05-27T14:00:19.203382+02:00"}
+{"@level":"trace","@message":"statemgr.Filesystem: unlocked by closing terraform.tfstate","@timestamp":"2025-05-27T14:00:19.204498+02:00"}
+{"@level":"info","@message":"Terraform version: 1.11.4","@timestamp":"2025-05-27T14:08:56.378931+02:00"}
+{"@level":"debug","@message":"using github.com/hashicorp/go-tfe v1.70.0","@timestamp":"2025-05-27T14:08:56.440003+02:00"}
+{"@level":"debug","@message":"using github.com/hashicorp/hcl/v2 v2.23.0","@timestamp":"2025-05-27T14:08:56.440977+02:00"}
+{"@level":"debug","@message":"using github.com/hashicorp/terraform-svchost v0.1.1","@timestamp":"2025-05-27T14:08:56.440977+02:00"}
+{"@level":"debug","@message":"using github.com/zclconf/go-cty v1.16.0","@timestamp":"2025-05-27T14:08:56.440977+02:00"}
+{"@level":"info","@message":"Go runtime version: go1.23.3","@timestamp":"2025-05-27T14:08:56.440977+02:00"}
+{"@level":"info","@message":"CLI args: []string{\"C:\\\\Terraform\\\\terraform.exe\", \"validate\"}","@timestamp":"2025-05-27T14:08:56.440977+02:00"}
+{"@level":"trace","@message":"Stdout is a terminal of width 100","@timestamp":"2025-05-27T14:08:56.441486+02:00"}
+{"@level":"trace","@message":"Stderr is a terminal of width 100","@timestamp":"2025-05-27T14:08:56.441486+02:00"}
+{"@level":"trace","@message":"Stdin is a terminal","@timestamp":"2025-05-27T14:08:56.442002+02:00"}
+{"@level":"debug","@message":"Attempting to open CLI config file: C:\\Users\\luca.bigoni\\AppData\\Roaming\\terraform.rc","@timestamp":"2025-05-27T14:08:56.447519+02:00"}
+{"@level":"debug","@message":"File doesn't exist, but doesn't need to. Ignoring.","@timestamp":"2025-05-27T14:08:56.447519+02:00"}
+{"@level":"debug","@message":"ignoring non-existing provider search directory terraform.d/plugins","@timestamp":"2025-05-27T14:08:56.448054+02:00"}
+{"@level":"debug","@message":"ignoring non-existing provider search directory C:\\Users\\luca.bigoni\\AppData\\Roaming\\terraform.d\\plugins","@timestamp":"2025-05-27T14:08:56.448578+02:00"}
+{"@level":"debug","@message":"ignoring non-existing provider search directory C:\\Users\\luca.bigoni\\AppData\\Roaming\\HashiCorp\\Terraform\\plugins","@timestamp":"2025-05-27T14:08:56.449675+02:00"}
+{"@level":"info","@message":"CLI command args: []string{\"validate\"}","@timestamp":"2025-05-27T14:08:56.449675+02:00"}
+{"@level":"trace","@message":"providercache.fillMetaCache: scanning directory .terraform\\providers","@timestamp":"2025-05-27T14:08:56.454118+02:00"}
+{"@level":"trace","@message":"getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/aws v3.58.0 for windows_386 at .terraform\\providers\\registry.terraform.io\\hashicorp\\aws\\3.58.0\\windows_386","@timestamp":"2025-05-27T14:08:56.455718+02:00"}
+{"@level":"trace","@message":"providercache.fillMetaCache: including .terraform\\providers\\registry.terraform.io\\hashicorp\\aws\\3.58.0\\windows_386 as a candidate package for registry.terraform.io/hashicorp/aws 3.58.0","@timestamp":"2025-05-27T14:08:56.456484+02:00"}
+{"@level":"debug","@message":"checking for provisioner in \".\"","@timestamp":"2025-05-27T14:08:56.952909+02:00"}
+{"@level":"debug","@message":"checking for provisioner in \"C:\\\\Terraform\"","@timestamp":"2025-05-27T14:08:56.952909+02:00"}
+{"@level":"trace","@message":"terraform.NewContext: starting","@timestamp":"2025-05-27T14:08:56.952909+02:00"}
+{"@level":"trace","@message":"terraform.NewContext: complete","@timestamp":"2025-05-27T14:08:56.952909+02:00"}
+{"@level":"trace","@message":"LoadSchemas: retrieving schema for provider type \"registry.terraform.io/hashicorp/aws\"","@timestamp":"2025-05-27T14:08:56.952909+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Initializing provider \"registry.terraform.io/hashicorp/aws\" to read its schema","@timestamp":"2025-05-27T14:08:56.952909+02:00"}
+{"@level":"debug","@message":"created provider logger","@timestamp":"2025-05-27T14:08:56.952909+02:00","level":2}
+{"@level":"info","@message":"configuring client automatic mTLS","@module":"provider","@timestamp":"2025-05-27T14:08:56.952909+02:00"}
+{"@level":"debug","@message":"starting plugin","@module":"provider","@timestamp":"2025-05-27T14:08:57.039670+02:00","args":[".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe"],"path":".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe"}
+{"@level":"debug","@message":"plugin started","@module":"provider","@timestamp":"2025-05-27T14:08:57.079946+02:00","path":".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe","pid":34032}
+{"@level":"debug","@message":"waiting for RPC address","@module":"provider","@timestamp":"2025-05-27T14:08:57.079946+02:00","plugin":".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe"}
+{"@level":"info","@message":"configuring server automatic mTLS","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:08:57.288837+02:00","timestamp":"2025-05-27T14:08:57.165+0200"}
+{"@level":"debug","@message":"plugin address","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:08:57.349467+02:00","address":"127.0.0.1:10000","network":"tcp","timestamp":"2025-05-27T14:08:57.349+0200"}
+{"@level":"debug","@message":"using plugin","@module":"provider","@timestamp":"2025-05-27T14:08:57.349467+02:00","version":5}
+{"@level":"trace","@message":"GRPCProvider: GetProviderSchema","@timestamp":"2025-05-27T14:08:57.451046+02:00"}
+{"@level":"trace","@message":"GRPCProvider: Close","@timestamp":"2025-05-27T14:08:57.601108+02:00"}
+{"@level":"debug","@message":"received EOF, stopping recv loop","@module":"provider.stdio","@timestamp":"2025-05-27T14:08:57.604011+02:00","err":"rpc error: code = Unavailable desc = error reading from server: EOF"}
+{"@level":"info","@message":"plugin process exited","@module":"provider","@timestamp":"2025-05-27T14:08:57.612080+02:00","id":"34032","plugin":".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe"}
+{"@level":"debug","@message":"plugin exited","@module":"provider","@timestamp":"2025-05-27T14:08:57.614696+02:00"}
+{"@level":"debug","@message":"Building and walking validate graph","@timestamp":"2025-05-27T14:08:57.615206+02:00"}
+{"@level":"trace","@message":"building graph for walkValidate","@timestamp":"2025-05-27T14:08:57.616806+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ConfigTransformer","@timestamp":"2025-05-27T14:08:57.617860+02:00"}
+{"@level":"trace","@message":"ConfigTransformer: Starting for path:","@timestamp":"2025-05-27T14:08:57.618378+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ConfigTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeValidatableResource\n  ------","@timestamp":"2025-05-27T14:08:57.619937+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.RootVariableTransformer","@timestamp":"2025-05-27T14:08:57.619937+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.RootVariableTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.620464+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ModuleVariableTransformer","@timestamp":"2025-05-27T14:08:57.620464+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ModuleVariableTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.621033+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.variableValidationTransformer","@timestamp":"2025-05-27T14:08:57.621033+02:00"}
+{"@level":"trace","@message":"variableValidationTransformer: adding validation nodes for any existing variable evaluation nodes","@timestamp":"2025-05-27T14:08:57.621033+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.variableValidationTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.621033+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.LocalTransformer","@timestamp":"2025-05-27T14:08:57.621033+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.LocalTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.621537+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.OutputTransformer","@timestamp":"2025-05-27T14:08:57.621537+02:00"}
+{"@level":"trace","@message":"OutputTransformer: adding public_ip as *terraform.nodeExpandOutput","@timestamp":"2025-05-27T14:08:57.621537+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.OutputTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeValidatableResource\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n  ------","@timestamp":"2025-05-27T14:08:57.622059+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.checkTransformer","@timestamp":"2025-05-27T14:08:57.622059+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.checkTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.622059+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.OrphanResourceInstanceTransformer","@timestamp":"2025-05-27T14:08:57.622059+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.622059+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.StateTransformer","@timestamp":"2025-05-27T14:08:57.622059+02:00"}
+{"@level":"trace","@message":"StateTransformer: pointless no-op call, creating no nodes at all","@timestamp":"2025-05-27T14:08:57.622059+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.StateTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.622059+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.AttachStateTransformer","@timestamp":"2025-05-27T14:08:57.622575+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.AttachStateTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.622575+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.OrphanOutputTransformer","@timestamp":"2025-05-27T14:08:57.622575+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.OrphanOutputTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.622575+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.AttachResourceConfigTransformer","@timestamp":"2025-05-27T14:08:57.622575+02:00"}
+{"@level":"trace","@message":"AttachResourceConfigTransformer: attaching to \"aws_instance.my_server\" (*terraform.NodeValidatableResource) config from hcl.Range{Filename:\"main.tf\", Start:hcl.Pos{Line:14, Column:1, Byte:200}, End:hcl.Pos{Line:14, Column:36, Byte:235}}","@timestamp":"2025-05-27T14:08:57.622575+02:00"}
+{"@level":"trace","@message":"AttachResourceConfigTransformer: attaching provider meta configs to aws_instance.my_server","@timestamp":"2025-05-27T14:08:57.622575+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.622575+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.graphTransformerMulti","@timestamp":"2025-05-27T14:08:57.622575+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Executing graph transform *terraform.externalProviderTransformer","@timestamp":"2025-05-27T14:08:57.623090+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Completed graph transform *terraform.externalProviderTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeValidatableResource\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n  ------","@timestamp":"2025-05-27T14:08:57.623090+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer","@timestamp":"2025-05-27T14:08:57.623090+02:00"}
+{"@level":"trace","@message":"ProviderConfigTransformer: attaching to \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"]\" provider configuration from main.tf:10,1-15","@timestamp":"2025-05-27T14:08:57.623605+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeValidatableResource\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  ------","@timestamp":"2025-05-27T14:08:57.623605+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer","@timestamp":"2025-05-27T14:08:57.623605+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.624156+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer","@timestamp":"2025-05-27T14:08:57.624156+02:00"}
+{"@level":"trace","@message":"ProviderTransformer: exact match for provider[\"registry.terraform.io/hashicorp/aws\"] serving aws_instance.my_server","@timestamp":"2025-05-27T14:08:57.624850+02:00"}
+{"@level":"debug","@message":"ProviderTransformer: \"aws_instance.my_server\" (*terraform.NodeValidatableResource) needs provider[\"registry.terraform.io/hashicorp/aws\"]","@timestamp":"2025-05-27T14:08:57.624850+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeValidatableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  ------","@timestamp":"2025-05-27T14:08:57.624850+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer","@timestamp":"2025-05-27T14:08:57.625378+02:00"}
+{"@level":"trace","@message":"(graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.626480+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.graphTransformerMulti with new graph:\n  aws_instance.my_server - *terraform.NodeValidatableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  ------","@timestamp":"2025-05-27T14:08:57.626480+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.RemovedModuleTransformer","@timestamp":"2025-05-27T14:08:57.626480+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.RemovedModuleTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.626480+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.AttachSchemaTransformer","@timestamp":"2025-05-27T14:08:57.626480+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:08:57.626480+02:00"}
+{"@level":"trace","@message":"AttachSchemaTransformer: attaching resource schema to aws_instance.my_server","@timestamp":"2025-05-27T14:08:57.626480+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:08:57.626480+02:00"}
+{"@level":"trace","@message":"AttachSchemaTransformer: attaching provider config schema to provider[\"registry.terraform.io/hashicorp/aws\"]","@timestamp":"2025-05-27T14:08:57.626480+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.AttachSchemaTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.626480+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ModuleExpansionTransformer","@timestamp":"2025-05-27T14:08:57.626480+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ModuleExpansionTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.626480+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ExternalReferenceTransformer","@timestamp":"2025-05-27T14:08:57.626985+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ExternalReferenceTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.626985+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ReferenceTransformer","@timestamp":"2025-05-27T14:08:57.627504+02:00"}
+{"@level":"debug","@message":"ReferenceTransformer: \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"]\" references: []","@timestamp":"2025-05-27T14:08:57.629118+02:00"}
+{"@level":"debug","@message":"ReferenceTransformer: \"aws_instance.my_server\" references: []","@timestamp":"2025-05-27T14:08:57.629118+02:00"}
+{"@level":"debug","@message":"ReferenceTransformer: \"output.public_ip (expand)\" references: [aws_instance.my_server]","@timestamp":"2025-05-27T14:08:57.629657+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ReferenceTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeValidatableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n    aws_instance.my_server - *terraform.NodeValidatableResource\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  ------","@timestamp":"2025-05-27T14:08:57.629657+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.AttachDependenciesTransformer","@timestamp":"2025-05-27T14:08:57.630200+02:00"}
+{"@level":"trace","@message":"AttachDependenciesTransformer: output.public_ip (expand) depends on [aws_instance.my_server]","@timestamp":"2025-05-27T14:08:57.630739+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.AttachDependenciesTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.630739+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.attachDataResourceDependsOnTransformer","@timestamp":"2025-05-27T14:08:57.630739+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.630739+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.DestroyEdgeTransformer","@timestamp":"2025-05-27T14:08:57.630739+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.DestroyEdgeTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.630739+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.pruneUnusedNodesTransformer","@timestamp":"2025-05-27T14:08:57.630739+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.630739+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.TargetsTransformer","@timestamp":"2025-05-27T14:08:57.630739+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.TargetsTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.630739+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ForcedCBDTransformer","@timestamp":"2025-05-27T14:08:57.630739+02:00"}
+{"@level":"trace","@message":"ForcedCBDTransformer: \"aws_instance.my_server\" (*terraform.NodeValidatableResource) has no CBD descendant, so skipping","@timestamp":"2025-05-27T14:08:57.630739+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ForcedCBDTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.630739+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.ephemeralResourceCloseTransformer","@timestamp":"2025-05-27T14:08:57.630739+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.ephemeralResourceCloseTransformer (no changes)","@timestamp":"2025-05-27T14:08:57.630739+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.CloseProviderTransformer","@timestamp":"2025-05-27T14:08:57.631274+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.CloseProviderTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeValidatableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n    aws_instance.my_server - *terraform.NodeValidatableResource\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  provider[\"registry.terraform.io/hashicorp/aws\"] (close) - *terraform.graphNodeCloseProvider\n    aws_instance.my_server - *terraform.NodeValidatableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  ------","@timestamp":"2025-05-27T14:08:57.631274+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.CloseRootModuleTransformer","@timestamp":"2025-05-27T14:08:57.631274+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.CloseRootModuleTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeValidatableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n    aws_instance.my_server - *terraform.NodeValidatableResource\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  provider[\"registry.terraform.io/hashicorp/aws\"] (close) - *terraform.graphNodeCloseProvider\n    aws_instance.my_server - *terraform.NodeValidatableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  root - *terraform.nodeCloseModule\n    output.public_ip (expand) - *terraform.nodeExpandOutput\n    provider[\"registry.terraform.io/hashicorp/aws\"] (close) - *terraform.graphNodeCloseProvider\n  ------","@timestamp":"2025-05-27T14:08:57.631274+02:00"}
+{"@level":"trace","@message":"Executing graph transform *terraform.TransitiveReductionTransformer","@timestamp":"2025-05-27T14:08:57.631274+02:00"}
+{"@level":"trace","@message":"Completed graph transform *terraform.TransitiveReductionTransformer with new graph:\n  aws_instance.my_server - *terraform.NodeValidatableResource\n    provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  output.public_ip (expand) - *terraform.nodeExpandOutput\n    aws_instance.my_server - *terraform.NodeValidatableResource\n  provider[\"registry.terraform.io/hashicorp/aws\"] - *terraform.NodeApplyableProvider\n  provider[\"registry.terraform.io/hashicorp/aws\"] (close) - *terraform.graphNodeCloseProvider\n    aws_instance.my_server - *terraform.NodeValidatableResource\n  root - *terraform.nodeCloseModule\n    output.public_ip (expand) - *terraform.nodeExpandOutput\n    provider[\"registry.terraform.io/hashicorp/aws\"] (close) - *terraform.graphNodeCloseProvider\n  ------","@timestamp":"2025-05-27T14:08:57.631274+02:00"}
+{"@level":"debug","@message":"Starting graph walk: walkValidate","@timestamp":"2025-05-27T14:08:57.631807+02:00"}
+{"@level":"trace","@message":"vertex \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"]\": starting visit (*terraform.NodeApplyableProvider)","@timestamp":"2025-05-27T14:08:57.637119+02:00"}
+{"@level":"trace","@message":"vertex \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"]\": belongs to","@timestamp":"2025-05-27T14:08:57.637119+02:00"}
+{"@level":"debug","@message":"created provider logger","@timestamp":"2025-05-27T14:08:57.637119+02:00","level":2}
+{"@level":"info","@message":"configuring client automatic mTLS","@module":"provider","@timestamp":"2025-05-27T14:08:57.637119+02:00"}
+{"@level":"debug","@message":"starting plugin","@module":"provider","@timestamp":"2025-05-27T14:08:57.677838+02:00","args":[".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe"],"path":".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe"}
+{"@level":"debug","@message":"plugin started","@module":"provider","@timestamp":"2025-05-27T14:08:57.679434+02:00","path":".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe","pid":39472}
+{"@level":"debug","@message":"waiting for RPC address","@module":"provider","@timestamp":"2025-05-27T14:08:57.679434+02:00","plugin":".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe"}
+{"@level":"info","@message":"configuring server automatic mTLS","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:08:57.975800+02:00","timestamp":"2025-05-27T14:08:57.783+0200"}
+{"@level":"debug","@message":"plugin address","@module":"provider.terraform-provider-aws_v3.58.0_x5.exe","@timestamp":"2025-05-27T14:08:58.061152+02:00","address":"127.0.0.1:10000","network":"tcp","timestamp":"2025-05-27T14:08:58.061+0200"}
+{"@level":"debug","@message":"using plugin","@module":"provider","@timestamp":"2025-05-27T14:08:58.061152+02:00","version":5}
+{"@level":"trace","@message":"BuiltinEvalContext: Initialized \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"]\" provider for provider[\"registry.terraform.io/hashicorp/aws\"]","@timestamp":"2025-05-27T14:08:58.144463+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:08:58.144984+02:00"}
+{"@level":"trace","@message":"NodeApplyableProvider: validating configuration for provider[\"registry.terraform.io/hashicorp/aws\"]","@timestamp":"2025-05-27T14:08:58.144984+02:00"}
+{"@level":"trace","@message":"buildProviderConfig for provider[\"registry.terraform.io/hashicorp/aws\"]: using explicit config only","@timestamp":"2025-05-27T14:08:58.144984+02:00"}
+{"@level":"trace","@message":"GRPCProvider: GetProviderSchema","@timestamp":"2025-05-27T14:08:58.144984+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:08:58.265323+02:00"}
+{"@level":"trace","@message":"GRPCProvider: ValidateProviderConfig","@timestamp":"2025-05-27T14:08:58.267948+02:00"}
+{"@level":"trace","@message":"GRPCProvider: GetProviderSchema","@timestamp":"2025-05-27T14:08:58.268451+02:00"}
+{"@level":"trace","@message":"vertex \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"]\": visit complete","@timestamp":"2025-05-27T14:08:58.358040+02:00"}
+{"@level":"trace","@message":"vertex \"aws_instance.my_server\": starting visit (*terraform.NodeValidatableResource)","@timestamp":"2025-05-27T14:08:58.358040+02:00"}
+{"@level":"trace","@message":"vertex \"aws_instance.my_server\": belongs to","@timestamp":"2025-05-27T14:08:58.358556+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:08:58.358556+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:08:58.358556+02:00"}
+{"@level":"trace","@message":"GRPCProvider: ValidateResourceConfig","@timestamp":"2025-05-27T14:08:58.361212+02:00"}
+{"@level":"trace","@message":"GRPCProvider: GetProviderSchema","@timestamp":"2025-05-27T14:08:58.361212+02:00"}
+{"@level":"trace","@message":"vertex \"aws_instance.my_server\": visit complete","@timestamp":"2025-05-27T14:08:58.362765+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip (expand)\": starting visit (*terraform.nodeExpandOutput)","@timestamp":"2025-05-27T14:08:58.363290+02:00"}
+{"@level":"trace","@message":"vertex \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)\": starting visit (*terraform.graphNodeCloseProvider)","@timestamp":"2025-05-27T14:08:58.363290+02:00"}
+{"@level":"trace","@message":"vertex \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)\": does not belong to any module instance","@timestamp":"2025-05-27T14:08:58.363290+02:00"}
+{"@level":"trace","@message":"GRPCProvider: Close","@timestamp":"2025-05-27T14:08:58.363290+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip (expand)\": does not belong to any module instance","@timestamp":"2025-05-27T14:08:58.363290+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip (expand)\": expanding dynamic subgraph","@timestamp":"2025-05-27T14:08:58.363290+02:00"}
+{"@level":"debug","@message":"received EOF, stopping recv loop","@module":"provider.stdio","@timestamp":"2025-05-27T14:08:58.363828+02:00","err":"rpc error: code = Unavailable desc = error reading from server: EOF"}
+{"@level":"trace","@message":"Expanding output: adding output.public_ip as *terraform.NodeApplyableOutput","@timestamp":"2025-05-27T14:08:58.364855+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip (expand)\": entering dynamic subgraph","@timestamp":"2025-05-27T14:08:58.364855+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip\": starting visit (*terraform.NodeApplyableOutput)","@timestamp":"2025-05-27T14:08:58.364855+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip\": belongs to","@timestamp":"2025-05-27T14:08:58.364855+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:08:58.364855+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:08:58.365883+02:00"}
+{"@level":"trace","@message":"terraform.contextPlugins: Schema for provider \"registry.terraform.io/hashicorp/aws\" is in the global cache","@timestamp":"2025-05-27T14:08:58.366397+02:00"}
+{"@level":"trace","@message":"setValue: Saving Create change for output.public_ip in changeset","@timestamp":"2025-05-27T14:08:58.367612+02:00"}
+{"@level":"trace","@message":"setValue: Saving value for output.public_ip in state","@timestamp":"2025-05-27T14:08:58.367612+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip\": visit complete","@timestamp":"2025-05-27T14:08:58.368116+02:00"}
+{"@level":"trace","@message":"vertex \"root\": starting visit (terraform.graphNodeRoot)","@timestamp":"2025-05-27T14:08:58.368116+02:00"}
+{"@level":"trace","@message":"vertex \"root\": does not belong to any module instance","@timestamp":"2025-05-27T14:08:58.368116+02:00"}
+{"@level":"trace","@message":"vertex \"root\": visit complete","@timestamp":"2025-05-27T14:08:58.368116+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip (expand)\": dynamic subgraph completed successfully","@timestamp":"2025-05-27T14:08:58.368116+02:00"}
+{"@level":"trace","@message":"vertex \"output.public_ip (expand)\": visit complete","@timestamp":"2025-05-27T14:08:58.368116+02:00"}
+{"@level":"info","@message":"plugin process exited","@module":"provider","@timestamp":"2025-05-27T14:08:58.371864+02:00","id":"39472","plugin":".terraform/providers/registry.terraform.io/hashicorp/aws/3.58.0/windows_386/terraform-provider-aws_v3.58.0_x5.exe"}
+{"@level":"debug","@message":"plugin exited","@module":"provider","@timestamp":"2025-05-27T14:08:58.372396+02:00"}
+{"@level":"trace","@message":"vertex \"provider[\\\"registry.terraform.io/hashicorp/aws\\\"] (close)\": visit complete","@timestamp":"2025-05-27T14:08:58.372396+02:00"}
+{"@level":"trace","@message":"vertex \"root\": starting visit (*terraform.nodeCloseModule)","@timestamp":"2025-05-27T14:08:58.372396+02:00"}
+{"@level":"trace","@message":"vertex \"root\": does not belong to any module instance","@timestamp":"2025-05-27T14:08:58.372396+02:00"}
+{"@level":"trace","@message":"vertex \"root\": visit complete","@timestamp":"2025-05-27T14:08:58.372907+02:00"}
