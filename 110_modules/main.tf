@@ -1,20 +1,29 @@
 terraform {
+  required_version = ">= 1.0.0"
 
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 5.0"
+    }
+  }
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region  = "us-east-1"
+  profile = "lb-aws-admin"
 }
 
 module "apache" {
-	source = ".//terraform-aws-apache-example"
-	vpc_id = "vpc-bd9bdcc7"
-	my_ip_with_cidr = "104.194.51.113/32"
-	public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDdgyskPBKxTa4G8rIT76MP1zKfL4Xv9UBn/k/p7bEQYLPzhGQfdki3em2Hnh/wGzjeRJsRCCgezMnyirOizm3jXbob5F9QVBGbwn0cQMu1CW9Dx59ce+vJQtz9ezCAocko7W8oij3fr0npJWVQchxiR+yI5lm1PexaESYTTmz/ImzmeF2AJNRDqKR4xFrK9kM22GOm2kd7YYXIxpqDOMZ7j7v1HHU9v9CwgHCGbq0c09EshCXLx0GZ7r3BjRun8vQ9OxgVGIf62MQAUbMPKR0oq84X5oVv/2a4d79Bx46Ttj1xlzP8UHgWrUKHUbpFZ6AZEMMIsLOzoduLk8eCzNvPWH/SkaEoc2ww+7+Ii0fDyeycTHzewQtXxyyzNDyFrZj8b08c+Pg1h26PClMNajUF4eBO8+u4ZbcvsDMdXKimvYeRXXaFMciy6NcMCq0ZwtwvmLsId+pm9Gu1WS/QG3JmRYUSMzc1FPZG9DI2aI3ivG3HQEuYe25hhik6adw24lk= root@DESKTOP-J1KCQ03"
-	instance_type = "t2.micro"
- 	server_name = "Apache Example Server"
+  source             = "./terraform-aws-apache-example"
+  vpc_id             = "vpc-0cd1d459812cff83a"
+  my_ip_with_cidr    = "172.31.0.0/16"
+  public_key         = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQChwq0wQ2PGtWN+Giq/o+qdxzGwweFNm2L+oehCB+RSon+EXVm+Vnj1nEFUnXIVvXHY1Yx0GhP3RMAgQxUaaE2Qe2adoiQ502BceWuxQdINNQxfWkBWAXhFshly0XCb/siLFZP+WOMS9K+2qwImPphjZnIATe6mwrFnoWm22xTmO3E+bgz7VTc0ofnNA5xGh7quOYOtutzC/ouxg9+c+9dAEtEblPYt1374kRMQgqDzvpa6WFHirvgWtdoI/7fBFuJPhJau3BcatCwmUwf421LklycIRBmPL8FWp+3AfK2ng6Ap2FMT9mWY7kAfnjx/sRFgOvMjcc3bz/freTmPI6qgcz9xR4/lMA/AIUvqdezr6OHy1dy4j8am4ikmWo8tAVLSCvzuouGmS1COIvn5qXqYRZ96a9hCItDYByzIt+TN0RQ3Oq6QGFVh/xM5yBKBAalqVHwWz/QdfZNQoZooinWgvypyWMEU0VZxEj/aNxsc39GYUZ37qBzOVxe/26xNHxv+OMl1GUhgHkKzc3/xIq1wKTR6wlrrXEM03IZUC454HJcHRsH3+WZmV+U+ko4V/8gkCIwye9gfDLyV8q0g/Yka56+A3hjOcI3TUFnuwLjyFAy/B841LUjO72ySFf0Q5s9KJxu2zbjmneh3OsDR4vnpSBClxe7xf+THwKSV1si50w== luca.bigoni@gmail.com"
+  instance_type      = "t2.micro"
+  server_name        = "Apache Example Server"
 }
 
 output "public_ip" {
-  value = module.apache.public_ip
+  description = "Public IP of the Apache instance"
+  value       = module.apache.public_ip
 }
