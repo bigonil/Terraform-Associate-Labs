@@ -1,0 +1,18 @@
+# File di stato e cache di Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform.lock.hcl
+
+# File di log e output
+*.log
+
+# File di sistema
+.DS_Store
+Thumbs.db

@@ -1,15 +1,12 @@
 terraform {
-  backend "s3" {
-    bucket = "terraform-backend-4329408"
-    key    = "terraform.tfstate"
-    region = "us-east-1"
-    dynamodb_table = "force-unlock-terraform"
+  backend "s3" {}
+
   }
-}
 
 
 provider "aws" {
   region = "us-east-1"
+  profile = "lb-aws-admin"
 }
 
 resource "aws_s3_bucket" "bucket" {
